@@ -1,18 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 
 import NavBar from './ui/navBar'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="">
       <Head>
         <title>Objectif Crea</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="relative">
+      <main className="relative w-full h-full">
         <NavBar />
         <h1 className="top-500 left-500">
           Welcome to Objectif Crea
@@ -21,7 +20,7 @@ export default function Home() {
 
       </main>
 
-      <footer className={styles.footer}>
+      <footer className="">
 
       </footer>
     </div>
