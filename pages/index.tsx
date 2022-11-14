@@ -21,7 +21,7 @@ export default function Home() {
       </main>
 
       <footer className="">
-
+        <p>This is the footer</p>
       </footer>
     </div>
   )
