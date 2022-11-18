@@ -14,7 +14,7 @@ export default function Home() {
       <main className="relative w-full h-full">
         <NavBar />
         <h1 className="top-500 left-500">
-          Objectif Crea
+          Welcome to Objectif Crea
         </h1>
 
 
