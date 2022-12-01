@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
-import NavBar from './ui/navBar'
+import NavBar from './ui/navBar/NavBar'
+import Banner from './ui/banner/Banner'
 
 export default function Home() {
   return (
@@ -12,10 +12,8 @@ export default function Home() {
       </Head>
 
       <main className="relative w-full h-full">
-        <NavBar />
-        <h1 className="top-500 left-500">
-          Welcome to Objectif Crea
-        </h1>
+        {/* <NavBar /> */}
+        <Banner />
 
 
       </main>
