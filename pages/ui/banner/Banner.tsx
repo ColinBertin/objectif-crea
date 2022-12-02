@@ -14,7 +14,7 @@ export default function Banner() {
           objectFit: "cover",
         }}
       />
-      <h1 className="m-0 text-2xl text-center align-middle z-10 pt-50">hello</h1>
+      <h1 className="m-0 text-2xl text-center align-middle z-10 pt-50">Do you see me?</h1>
       </div>
     </div>
   );
