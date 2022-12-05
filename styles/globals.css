@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Agency";
+  src: url("/fonts/AGENCYR.ttf");
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: url("/fonts/Calibri.ttf");
+}
+
+h1, h2, h3 {
+  font-family: "Agency", sans-serif;
+}
+
 body {
+  font-family: "Calibri", sans-serif;
+  font-size: 1.5rem;
   background-color: #282a2d;
   color: #fff;
 }
