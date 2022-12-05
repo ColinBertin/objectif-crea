@@ -6,6 +6,7 @@ export default function Banner() {
         backgroundImage: `url('/bannerImg1.png')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        backgroundAttachment: "fixed"
         // filter: "blur(2px)"
       }}
     >
