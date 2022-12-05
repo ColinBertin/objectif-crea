@@ -10,7 +10,7 @@ export default function Banner() {
       }}
     >
       <div className="fixed h-screen w-screen -z-1"></div>
-      <h1 className="absolute">Do you see me?</h1>
+      {/* <h1 className="absolute">Do you see me?</h1> */}
     </div>
   );
 }
