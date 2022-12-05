@@ -1,7 +1,8 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import NavBar from './ui/navBar/NavBar'
-import Banner from './ui/banner/Banner'
+import NavBar from "./components/navBar/NavBar";
+import Banner from "./components/banner/Banner";
+import Main from "./components/main/Main";
 
 export default function Home() {
   return (
@@ -11,16 +12,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="relative w-full h-full">
-        {/* <NavBar /> */}
-        <Banner />
-
-
-      </main>
+      <div className="relative h-screen w-screen">
+        <header className="h-screen w-screen">
+          <NavBar />
+          <Banner />
+        </header>
+        <main className="h-100">
+          <Main />
+        </main>
+      </div>
 
       <footer className="">
         <p></p>
       </footer>
     </div>
-  )
+  );
 }
