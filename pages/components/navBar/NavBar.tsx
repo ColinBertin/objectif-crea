@@ -12,9 +12,9 @@ export default function NavBar() {
           height={150}
         />
       </div>
-      <ul className="flex">
-        <li>Home</li>
-        <li>Photo</li>
+      <ul className="flex my-auto">
+        <li className='mr-2'>Home</li>
+        <li className='mr-2'>Photo</li>
         <li>Info</li>
       </ul>
     </nav>
