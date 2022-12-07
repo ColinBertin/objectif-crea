@@ -27,7 +27,7 @@ export default function NavBar() {
           ""
         )}
         <button className="" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <XMarkIcon className="h-10 w-10" /> : <Bars3Icon className="h-10 w-10" />}
+          {menuOpen ? <XMarkIcon className="h-10 w-10" /> : <Bars3Icon className="h-10 w-10 font-black" />}
         </button>
       </div>
     </nav>
