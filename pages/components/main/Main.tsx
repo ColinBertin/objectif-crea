@@ -2,8 +2,8 @@ import CategoryCard from "./CategoryCard";
 
 export default function Main() {
   return (
-    <div className="h-96 text-center pt-28 pb-20 py-9">
-      <div className="px-80">
+    <div className="text-center py-9">
+      <div className="mt-36 px-80">
         <h2 className="mb-3">— WE TAKE THE TIME TO —</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam

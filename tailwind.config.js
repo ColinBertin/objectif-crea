@@ -16,6 +16,12 @@ module.exports = {
         "4xl": "8rem",
         "5xl": "10rem",
       },
+      colors: {
+        gray: {
+          700: "#282A2D",
+          800: "#212326"
+        }
+      }
     },
     screens: {
       'sm': '640px',
@@ -32,7 +38,7 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
-    }
+    },
   },
   plugins: [],
 };
