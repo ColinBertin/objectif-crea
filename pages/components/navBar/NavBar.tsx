@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useRouter } from 'next/router'
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import clsx from "clsx";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,10 +27,10 @@ export default function NavBar() {
       </a>
       <div className="flex">
         {menuOpen ? (
-          <ul className="flex my-auto">
-            <li className="mr-3">Home</li>
-            <li className="mr-3">Photo</li>
-            <li className="mr-4">Info</li>
+          <ul className={clsx(menuOpen ? "flex my-auto" : "flex my-auto")}>
+            <li className="mr-3"><a href={"/"} onClick={handleClick}>Home</a></li>
+            <li className="mr-3"><a href={"/"} onClick={handleClick}>Photo</a></li>
+            <li className="mr-4"><a href={"/"} onClick={handleClick}>Info</a></li>
           </ul>
         ) : (
           ""
