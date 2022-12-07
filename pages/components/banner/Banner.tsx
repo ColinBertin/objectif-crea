@@ -6,7 +6,6 @@ export default function Banner() {
         backgroundImage: `linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url('/bannerImg1.png')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "100% 100%",
-        // backgroundSize: "contain",
         backgroundAttachment: "fixed",
       }}
     >
