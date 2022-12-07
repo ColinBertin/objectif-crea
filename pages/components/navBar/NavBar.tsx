@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function NavBar() {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="flex justify-between my-3 px-16 py-12 w-full absolute left-0 top-0 py-5">
@@ -19,15 +19,15 @@ export default function NavBar() {
       <div className="flex">
         {menuOpen ? (
           <ul className="flex my-auto">
-            <li className="mr-2">Home</li>
-            <li className="mr-2">Photo</li>
-            <li>Info</li>
+            <li className="mr-3">Home</li>
+            <li className="mr-3">Photo</li>
+            <li className="mr-4">Info</li>
           </ul>
         ) : (
           ""
         )}
-        <button className="">
-          {menuOpen ? <XMarkIcon className="" /> : <Bars3Icon />}
+        <button className="" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <XMarkIcon className="h-10 w-10" /> : <Bars3Icon className="h-10 w-10" />}
         </button>
       </div>
     </nav>
