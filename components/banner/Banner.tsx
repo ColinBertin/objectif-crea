@@ -10,8 +10,8 @@ export default function Banner() {
       }}
     >
       <div className="flex flex-col items-center justify-center h-screen">
-        <h2 className="text-2xl tracking-widest">— WE TAKE THE TIME TO —</h2>
-        <h1 className="text-4xl tracking-widest">STAND & STARE</h1>
+        <h2 className="text-lg md:text-xl lg:text-2xl tracking-widest">— WE TAKE THE TIME TO —</h2>
+        <h1 className="text-xl md:text-2xl lg:text-4xl tracking-widest">STAND & STARE</h1>
         <button
           type="button"
           className="tracking-widest text-white-500 hover:text-white-700 py-3 px-10 border border-white-500 hover:border-white-700"
