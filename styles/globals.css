@@ -12,12 +12,18 @@
   src: url("/fonts/Calibri.ttf");
 }
 
-h1, h2, h3 {
+* {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
   font-family: "Agency", sans-serif;
 }
 
 body {
   font-family: "Calibri", sans-serif;
   font-size: 1.5rem;
-  background-color: #282A2D;
+  background-color: #282a2d;
 }

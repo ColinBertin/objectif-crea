@@ -18,7 +18,7 @@ export default function Main() {
           debitis perspiciatis.
         </p>
       </div>
-      <div className="grid grid-cols-4 grid-rows-2 grid-flow-col gap-6 my-36 mx-12 p-12 place-items-center text-gray-500">
+      <div className="grid grid-cols-4 grid-rows-2 grid-flow-col gap-4 my-36 mx-12 p-12 place-items-center text-gray-500">
         <CategoryCard />
         <CategoryCard />
         <CategoryCard />
