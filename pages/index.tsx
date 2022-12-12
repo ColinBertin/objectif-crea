@@ -1,8 +1,9 @@
 import Head from "next/head";
 
-import NavBar from "./components/navBar/NavBar";
-import Banner from "./components/banner/Banner";
-import Main from "./components/main/Main";
+import NavBar from "../components/navBar/NavBar";
+import Banner from "../components/banner/Banner";
+import Main from "../components/main/Main";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -20,11 +21,8 @@ export default function Home() {
         <main className="h-100">
           <Main />
         </main>
+        <Footer />
       </div>
-
-      <footer className="">
-        <p></p>
-      </footer>
     </div>
   );
 }

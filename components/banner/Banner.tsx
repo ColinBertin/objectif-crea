@@ -10,7 +10,7 @@ export default function Banner() {
       }}
     >
       <div className="flex flex-col items-center justify-center h-screen">
-        <h3 className="text-xl tracking-widest">— WE TAKE THE TIME TO —</h3>
+        <h2 className="text-2xl tracking-widest">— WE TAKE THE TIME TO —</h2>
         <h1 className="text-4xl tracking-widest">STAND & STARE</h1>
         <button
           type="button"
