@@ -24,12 +24,12 @@ export default function Footer() {
       </a>
       </div>
       <div className="flex justify-between">
-        <p className="hidden md:inline-block">© Copyright 2012 - 2022 | All Rights Reserved</p>
-        <ul className="flex">
-          <li className="mr-4 text-md"><FaFacebookF size={40}/></li>
-          <li className="mr-4 text-md"><AiOutlineTwitter size={40}/></li>
-          <li className="mr-4 text-md"><AiFillInstagram size={40}/></li>
-          <li className="text-md"><AiFillYoutube size={40}/></li>
+        <p className="hidden md:inline-block text-gray-500 my-auto">© Copyright 2012 - 2022 | All Rights Reserved</p>
+        <ul className="flex text-gray-600">
+          <li className="mr-4 text-md p-3 rounded bg-gray-700"><FaFacebookF size={40}/></li>
+          <li className="mr-4 text-md p-3 rounded bg-gray-700"><AiOutlineTwitter size={40}/></li>
+          <li className="mr-4 text-md p-3 rounded bg-gray-700"><AiFillInstagram size={40}/></li>
+          <li className="text-md p-3 rounded bg-gray-700"><AiFillYoutube size={40}/></li>
         </ul>
       </div>
     </footer>

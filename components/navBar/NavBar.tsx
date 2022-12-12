@@ -15,7 +15,7 @@ export default function NavBar() {
   }
 
   return (
-    <nav className="flex justify-between px-6 md:px-16 w-full absolute left-0 top-0 py-5">
+    <nav className="flex justify-between px-6 md:px-16 w-full absolute left-0 top-0 py-5 text-white">
       <a className="m-0 p-0" href={"/"} onClick={handleClick}>
         <Image
           src="/fullLogo.png"
