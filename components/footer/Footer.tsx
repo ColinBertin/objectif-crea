@@ -1,5 +1,7 @@
 import Image from "next/image";
 import router from "next/router";
+import { FaFacebookF } from 'react-icons/fa';
+import { AiOutlineTwitter, AiFillInstagram, AiFillYoutube } from 'react-icons/ai';
 
 export default function Footer() {
 
@@ -22,12 +24,12 @@ export default function Footer() {
       </a>
       </div>
       <div className="flex justify-between">
-        <p>© Copyright 2012 - 2022 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</p>
+        <p className="hidden md:inline-block">© Copyright 2012 - 2022 | All Rights Reserved</p>
         <ul className="flex">
-          <li className="mr-4">Fa</li>
-          <li className="mr-4">Tw</li>
-          <li className="mr-4">In</li>
-          <li>Yo</li>
+          <li className="mr-4 text-md"><FaFacebookF size={40}/></li>
+          <li className="mr-4 text-md"><AiOutlineTwitter size={40}/></li>
+          <li className="mr-4 text-md"><AiFillInstagram size={40}/></li>
+          <li className="text-md"><AiFillYoutube size={40}/></li>
         </ul>
       </div>
     </footer>

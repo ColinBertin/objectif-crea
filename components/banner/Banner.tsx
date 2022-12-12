@@ -14,7 +14,7 @@ export default function Banner() {
         <h1 className="text-xl md:text-2xl lg:text-4xl tracking-widest">STAND & STARE</h1>
         <button
           type="button"
-          className="tracking-widest text-white-500 hover:text-white-700 py-3 px-10 border border-white-500 hover:border-white-700"
+          className="md:tracking-widest text-white-500 hover:text-white-700 py-1.5 md:py-3 px-4 md:px-10 border border-white-500 hover:border-white-700"
         >
           BE INSPIRED
         </button>

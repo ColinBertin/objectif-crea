@@ -18,15 +18,15 @@ export default function Main() {
           debitis perspiciatis.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-rows-2 lg:grid-flow-col gap-6 my-36 mx-12 p-12 place-items-center">
-        {/* <CategoryCard />
+      <div className="grid grid-cols-4 grid-rows-2 grid-flow-col gap-6 my-36 mx-12 p-12 place-items-center">
         <CategoryCard />
         <CategoryCard />
         <CategoryCard />
         <CategoryCard />
         <CategoryCard />
         <CategoryCard />
-        <CategoryCard /> */}
+        <CategoryCard />
+        <CategoryCard />
       </div>
     </div>
   );
