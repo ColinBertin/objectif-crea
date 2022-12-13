@@ -18,7 +18,7 @@ export default function NavBar() {
     <nav className="flex justify-between px-6 md:px-16 w-full absolute left-0 top-0 py-5 text-white">
       <a className="m-0 p-0" href={"/"} onClick={handleClick}>
         <Image
-          src="https://github.com/ColinBertin/objectif-crea/blob/main/public/fullLogo.png"
+          src={`https://raw.githubusercontent.com/ColinBertin/objectif-crea/main/public/fullLogo.png?token=${process.env.ACCESS_TOKEN}`}
           alt="logo"
           quality={60}
           width={250}
