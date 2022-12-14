@@ -5,7 +5,8 @@ export default function Banner() {
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url('/bannerImg1.png')`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "100% 100%",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         backgroundAttachment: "fixed",
       }}
     >
