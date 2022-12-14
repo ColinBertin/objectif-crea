@@ -15,14 +15,14 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="flex justify-between px-6 md:px-16 w-full absolute left-0 top-0 py-5 text-white">
+    <nav className="flex justify-between px-4 md:px-12 w-full absolute left-0 top-0 py-3 text-white">
       <a className="m-0 p-0" href={"/"} onClick={handleClick}>
         <Image
           src="/fullLogo.png"
           alt="logo"
           quality={60}
-          width={250}
-          height={200}
+          width={180}
+          height={130}
         />
       </a>
       <div className="flex">
