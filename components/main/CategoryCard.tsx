@@ -12,7 +12,7 @@ export default function CategoryCard() {
         />
       </a>
       <div className="flex flex-row h-24 w-96 bg-gray-800">
-        <h3 className="m-auto">LANDSCAPE</h3>
+        <h4 className="m-auto">LANDSCAPE</h4>
       </div>
     </div>
   );
