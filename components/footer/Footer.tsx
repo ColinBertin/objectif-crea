@@ -11,8 +11,8 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-gray-800 px-14 py-16">
-      <div className="mb-10">
+    <footer className="bg-gray-800 px-10 py-16">
+      <div className="mb-4">
       <a className="m-0 p-0" href={"/"} onClick={handleClick}>
       <Image
           src="/fullLogo.png"
