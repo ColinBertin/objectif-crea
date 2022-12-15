@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function CategoryCard() {
   return (
-    <div className="max-w-sm shadow-md shadow-gray-600/10 w-80">
+    <div className="max-w-sm shadow-md shadow-gray-600/10 w-80 md:w-64 lg:w-64 xl:w-80">
       <a className="relative block h-52 bg-white object-fill" href="#">
         <Image
           className=""
