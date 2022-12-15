@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function CategoryCard() {
   return (
-    <div className="max-w-sm shadow-md shadow-gray-600/10 w-80 md:w-64 lg:w-64 xl:w-80">
+    <div className="max-w-sm shadow-md shadow-gray-600/10 w-auto">
       <a className="relative block h-52 bg-white object-fill" href="#">
         <Image
           className=""
@@ -11,7 +11,7 @@ export default function CategoryCard() {
           alt=""
         />
       </a>
-      <div className="flex flex-row h-24 bg-gray-800">
+      <div className="flex flex-row py-10 px-24 bg-gray-800">
         <h4 className="m-auto">LANDSCAPE</h4>
       </div>
     </div>
