@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function CategoryCard() {
   return (
     <div className="max-w-sm w-auto">
-      <a className="relative block h-52 bg-white object-fill" href="#">
+      <a className="relative block h-52 bg-white object-fill" href={"/"}>
         <Image
           className=""
           src="/bannerImg1.png"
