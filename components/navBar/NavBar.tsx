@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Link from 'next/link'
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
@@ -15,8 +16,8 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="flex justify-between px-4 md:px-12 w-full absolute left-0 top-0 py-3 text-white">
-      <a className="m-0 p-0" href={"/"} onClick={handleClick}>
+    <nav className="flex justify-between px-4 md:px-12 w-full absolute left-0 top-0 py-10 text-white">
+      <Link className="m-0 p-0" href={"/"} onClick={handleClick}>
         <Image
           src="/fullLogo.png"
           alt="logo"
@@ -24,24 +25,24 @@ export default function NavBar() {
           width={180}
           height={130}
         />
-      </a>
+      </Link>
       <div className="flex">
         {menuOpen ? (
           <ul className={clsx(menuOpen ? "flex my-auto" : "flex my-auto")}>
             <li className="mr-3">
-              <a href={"/"} onClick={handleClick}>
+              <Link href={"/"} onClick={handleClick}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="mr-3">
-              <a href={"/"} onClick={handleClick}>
+              <Link href={"/"} onClick={handleClick}>
                 Photo
-              </a>
+              </Link>
             </li>
             <li className="mr-4">
-              <a href={"/"} onClick={handleClick}>
+              <Link href={"/"} onClick={handleClick}>
                 Info
-              </a>
+              </Link>
             </li>
           </ul>
         ) : (
