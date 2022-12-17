@@ -11,7 +11,7 @@ export default function CategoryCard() {
           alt=""
         />
       </a>
-      <div className="flex flex-row py-8 px-20 bg-gray-800">
+      <div className="flex flex-row py-8 px-24 bg-gray-800">
         <h4 className="m-auto">LANDSCAPE</h4>
       </div>
     </div>
