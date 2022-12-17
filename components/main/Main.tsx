@@ -19,14 +19,14 @@ export default function Main() {
         </p>
       </div>
       <div className="px-10 pt-12 pb-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 place-items-center text-gray-500">
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
-        <CategoryCard />
+        <CategoryCard title={"Landscape"} />
+        <CategoryCard title={"Landscape"}/>
+        <CategoryCard title={"Landscape"}/>
+        <CategoryCard title={"Landscape"}/>
+        <CategoryCard title={"Landscape"}/>
+        <CategoryCard title={"Landscape"}/>
+        <CategoryCard title={"Landscape"}/>
+        <CategoryCard title={"Landscape"}/>
       </div>
     </div>
   );
