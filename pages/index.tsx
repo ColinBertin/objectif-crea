@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Objectif Crea</title>
+        <title>Objectif Créa</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
