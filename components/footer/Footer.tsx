@@ -22,8 +22,8 @@ export default function Footer() {
             src="/fullLogo.png"
             alt="logo"
             quality={60}
-            width={180}
-            height={130}
+            width={150}
+            height={100}
           />
         </Link>
       </div>
