@@ -7,7 +7,7 @@ type categoryCard = {
 
 export default function CategoryCard({title}: categoryCard) {
   return (
-    <div className="max-w-sm w-96 md:w-auto">
+    <div className="max-w-sm w-11/12 md:w-auto">
       <Link className="relative block h-48 bg-white object-fill" href={"/"}>
         <Image
           className="hover:backdrop-blur-sm hover:bg-white/30"
