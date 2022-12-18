@@ -3,7 +3,7 @@ import CategoryCard from "./CategoryCard";
 export default function Main() {
   return (
     <div className="text-center">
-      <div className="px-40 py-20 text-white">
+      <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
         <h3 className="mb-3 text-xl">— WE TAKE THE TIME TO —</h3>
         <p className="text-sm md:text-base leading-9 tracking-wide text-gray-500">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
@@ -18,7 +18,7 @@ export default function Main() {
           debitis perspiciatis.
         </p>
       </div>
-      <div className="px-10 pt-12 pb-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 place-items-center text-gray-500">
+      <div className="pt-12 pb-20 md:pb-36 md:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-12 place-items-center text-gray-500">
         <CategoryCard title={"Landscape"} />
         <CategoryCard title={"Landscape"}/>
         <CategoryCard title={"Landscape"}/>

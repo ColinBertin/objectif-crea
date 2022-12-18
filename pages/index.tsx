@@ -16,7 +16,7 @@ export default function Home() {
       <div className="relative h-screen w-screen">
         <header className="h-screen w-screen">
           <NavBar />
-          <Banner />
+          <Banner bg="/bannerImg1.png" />
         </header>
         <main className="h-100">
           <Main />
