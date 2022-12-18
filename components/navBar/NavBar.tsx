@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from "next/image";
 import {GiHamburgerMenu} from "react-icons/gi";
 import {AiOutlineClose} from "react-icons/ai";
-import clsx from "clsx";
+import Menu from "./Menu";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,23 +21,7 @@ export default function NavBar() {
       </Link>
       <div className="flex">
         {menuOpen ? (
-          <ul className={clsx(menuOpen ? "flex my-auto" : "flex my-auto")}>
-            <li className="mr-3">
-              <Link href={"/"}>
-                Home
-              </Link>
-            </li>
-            <li className="mr-3">
-              <Link href={"/"}>
-                Photo
-              </Link>
-            </li>
-            <li className="mr-4">
-              <Link href={"/"}>
-                Info
-              </Link>
-            </li>
-          </ul>
+          <Menu menuState={menuOpen}/>
         ) : (
           ""
         )}
