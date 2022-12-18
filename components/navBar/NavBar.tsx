@@ -9,7 +9,7 @@ export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between px-4 md:px-12 w-full absolute left-0 top-0 py-10 text-white">
+    <nav className="flex justify-between p-4 sm:px-12 w-full absolute left-0 top-0 md:px-10 text-white">
       <Link className="m-0 p-0" href={"/"}>
         <Image
           src="/fullLogo.png"
