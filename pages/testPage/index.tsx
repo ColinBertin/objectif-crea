@@ -11,7 +11,7 @@ export default function testPage() {
       </Head>
       <div>
         <NavBar />
-        <Banner />
+        <Banner bg="/bannerImg1.png" />
         <h3>Hello test page</h3>
       </div>
     </>
