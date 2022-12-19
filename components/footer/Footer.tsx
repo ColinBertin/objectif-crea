@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="mb-4">
         <Link className="m-0 p-0" href={"/"} onClick={handleClick}>
           <Image
-            src="/fullLogo.png"
+            src="/images/logos/fullLogo.png"
             alt="logo"
             quality={60}
             width={150}
