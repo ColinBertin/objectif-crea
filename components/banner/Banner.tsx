@@ -7,7 +7,7 @@ export default function Banner({ bg }: banner) {
     <div
       className="w-screen h-screen"
       style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url(${bg})`,
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url(${bg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
