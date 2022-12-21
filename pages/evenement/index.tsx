@@ -2,7 +2,7 @@ import Head from "next/head";
 import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
 
-export default function Évènement() {
+export default function Evenement() {
   return (
     <>
       <Head>
@@ -11,7 +11,7 @@ export default function Évènement() {
       </Head>
       <div>
         <NavBar />
-        <Banner bg="/images/banner/bannerEve.jpg" />
+        <Banner bg="/images/banner/evenement.png" />
       </div>
     </>
   );

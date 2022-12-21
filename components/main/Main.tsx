@@ -19,10 +19,10 @@ export default function Main() {
         </p>
       </div>
       <div className="pt-12 pb-20 md:pb-32 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-12 place-items-center text-gray-500">
-        <CategoryCard title={"Mariage"} link={"/mariage"} bg="/images/banner/bannerMariage.jpg"/>
-        <CategoryCard title={"Maternité"} link={"/naissance"} bg={"/images/banner/bannerNaissance.jpg"} />
-        <CategoryCard title={"Nouveau née"} link={"/nouveauNe"} bg="/images/banner/bannerNN.jpg"/>
-        <CategoryCard title={"Évènement"} link={"/evenement"} bg="/images/banner/bannerEve.jpg"/>
+        <CategoryCard title={"Mariage"} link={"/mariage"} bg="/images/banner/mariage.png"/>
+        <CategoryCard title={"Maternité"} link={"/maternite"} bg={"/images/banner/maternite.png"} />
+        <CategoryCard title={"Nouveau née"} link={"/nouveauNee"} bg="/images/banner/nouveauNee.png"/>
+        <CategoryCard title={"Évènement"} link={"/evenement"} bg="/images/banner/evenment.png"/>
         <CategoryCard title={"Landscape"}/>
         <CategoryCard title={"Landscape"}/>
         <CategoryCard title={"Landscape"}/>

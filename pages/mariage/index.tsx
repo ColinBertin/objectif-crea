@@ -2,7 +2,7 @@ import Head from "next/head";
 import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
 
-export default function Naissance() {
+export default function Mariage() {
   return (
     <>
       <Head>
@@ -11,7 +11,7 @@ export default function Naissance() {
       </Head>
       <div>
         <NavBar />
-        <Banner bg="/images/banner/bannerMariage.jpg" />
+        <Banner bg="/images/banner/mariage.png" />
       </div>
     </>
   );
