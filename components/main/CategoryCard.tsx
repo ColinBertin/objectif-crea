@@ -12,7 +12,7 @@ export default function CategoryCard({title, link, bg}: categoryCard) {
     <div className="max-w-sm w-full">
       <Link className="relative block h-48 bg-white object-fill" href={link ? link : "/"}>
         <Image
-          className="hover:backdrop-blur-sm hover:bg-white/30"
+          className=""
           src={bg ? bg : "/images/banner/bannerImg1.png"}
           fill
           alt=""

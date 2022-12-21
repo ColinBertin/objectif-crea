@@ -20,7 +20,7 @@ export default function Main() {
       </div>
       <div className="pt-12 pb-20 md:pb-32 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-12 place-items-center text-gray-500">
         <CategoryCard title={"Mariage"} link={"/mariage"} bg="/images/banner/bannerMariage.jpg"/>
-        <CategoryCard title={"Grossesse"} link={"/naissance"} bg={"/images/banner/bannerNaissance.jpg"} />
+        <CategoryCard title={"Maternité"} link={"/naissance"} bg={"/images/banner/bannerNaissance.jpg"} />
         <CategoryCard title={"Nouveau né"} link={"/nouveauNe"} bg="/images/banner/bannerNN.jpg"/>
         <CategoryCard title={"Évènement"} link={"/evenement"} bg="/images/banner/bannerEve.jpg"/>
         <CategoryCard title={"Landscape"}/>
