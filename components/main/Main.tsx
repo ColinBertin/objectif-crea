@@ -22,7 +22,7 @@ export default function Main() {
         <CategoryCard title={"Mariage"} link={"/mariage"} bg="/images/banner/mariage.png"/>
         <CategoryCard title={"Maternité"} link={"/maternite"} bg={"/images/banner/maternite.png"} />
         <CategoryCard title={"Nouveau née"} link={"/nouveauNee"} bg="/images/banner/nouveauNee.png"/>
-        <CategoryCard title={"Évènement"} link={"/evenement"} bg="/images/banner/evenment.png"/>
+        <CategoryCard title={"Évènement"} link={"/evenement"} bg="/images/banner/evenement.png"/>
         <CategoryCard title={"Landscape"}/>
         <CategoryCard title={"Landscape"}/>
         <CategoryCard title={"Landscape"}/>
