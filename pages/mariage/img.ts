@@ -1,6 +1,6 @@
 import { Image } from "react-grid-gallery";
 
-export interface CustomImage extends Image {
+export default interface CustomImage extends Image {
   original: string;
 }
 
