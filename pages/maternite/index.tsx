@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
+import Footer from "../../components/footer/Footer";
 
 export default function Maternite() {
   return (
@@ -13,6 +14,7 @@ export default function Maternite() {
         <NavBar />
         <Banner bg="/images/banner/maternite.png" />
       </div>
+      <Footer />
     </>
   );
 }
