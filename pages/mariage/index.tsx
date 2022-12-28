@@ -4,7 +4,7 @@ import Banner from "../../components/banner/Banner";
 import Footer from "../../components/footer/Footer";
 
 import PhotoAlbum from "react-photo-album";
-import {images} from "./img";
+import {images} from "../../img";
 
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
