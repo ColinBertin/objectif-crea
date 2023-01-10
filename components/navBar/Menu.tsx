@@ -11,9 +11,9 @@ export default function Menu({menuState}: menuProps) {
       <li className="mr-3">
         <Link href={"/"}>Home</Link>
       </li>
-      <li className="mr-3">
+      {/* <li className="mr-3">
         <Link href={"/"}>Photo</Link>
-      </li>
+      </li> */}
       <li className="mr-4">
         <Link href={"/"}>Info</Link>
       </li>
