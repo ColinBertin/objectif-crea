@@ -12,7 +12,7 @@ export default function Maternite() {
       </Head>
       <div>
         <NavBar />
-        <Banner bg="/images/banner/maternite.png" />
+        <Banner bg="/images/banner/maternite.jpg" />
       </div>
       <Footer />
     </>
