@@ -9,7 +9,7 @@ type categoryCard = {
 
 export default function CategoryCard({ title, link, bg }: categoryCard) {
   return (
-    <div className="max-w-sm w-full hover:shadow-[0_15px_30px_-10px_rgba(255,255,255,0.2)]">
+    <div className="max-w-sm w-full hover:shadow-[0_4px_50px_5px_rgba(100,100,100,0.2)]">
       <Link
         className="relative block h-48 bg-white object-fill"
         href={link ? link : "/"}
