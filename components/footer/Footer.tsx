@@ -5,7 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import {
   AiOutlineTwitter,
   AiFillInstagram,
-  AiFillYoutube,
+  AiFillLinkedin,
 } from "react-icons/ai";
 
 export default function Footer() {
@@ -53,9 +53,9 @@ export default function Footer() {
               <AiFillInstagram size={30} />
             </li>
           </Link>
-          <Link href="https://www.youtube.com" target={"_blank"}>
+          <Link href="https://www.linkedin.com/in/objectif-cr%C3%A9a-756144255/" target={"_blank"}>
             <li className="text-md p-3 rounded bg-gray-700 hover:bg-gray-500">
-              <AiFillYoutube size={30} />
+              <AiFillLinkedin size={30} />
             </li>
           </Link>
         </ul>
