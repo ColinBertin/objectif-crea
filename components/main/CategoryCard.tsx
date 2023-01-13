@@ -1,25 +1,30 @@
-import Image from 'next/image';
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
 type categoryCard = {
   title: string;
   link?: string;
   bg?: string;
-}
+};
 
-export default function CategoryCard({title, link, bg}: categoryCard) {
+export default function CategoryCard({ title, link, bg }: categoryCard) {
   return (
-    <div className="max-w-sm w-full">
-      <Link className="relative block h-48 bg-white object-fill" href={link ? link : "/"}>
+    <div className="max-w-sm w-full hover:shadow-[0_15px_30px_-10px_rgba(255,255,255,0.2)]">
+      <Link
+        className="relative block h-48 bg-white object-fill"
+        href={link ? link : "/"}
+      >
         <Image
           className=""
           src={bg ? bg : "/images/banner/bannerImg1.png"}
           fill
-          alt=""
+          alt={title}
         />
       </Link>
       <div className="flex flex-row py-5 bg-gray-800">
-        <h5 className="m-auto"><Link href={link ? link : "/"}>{title}</Link></h5>
+        <h5 className="m-auto">
+          <Link href={link ? link : "/"}>{title}</Link>
+        </h5>
       </div>
     </div>
   );
