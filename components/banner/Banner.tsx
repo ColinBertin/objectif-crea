@@ -14,18 +14,15 @@ export default function Banner({ bg }: banner) {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="flex flex-col items-center justify-center h-screen text-white">
-        <h2 className="text-lg md:text-xl lg:text-2xl tracking-widest">
-          — WE TAKE THE TIME TO —
-        </h2>
-        <h1 className="text-xl md:text-2xl lg:text-4xl tracking-widest">
-          STAND & STARE
+      <div className="flex flex-col items-center justify-center h-screen text-white px-10 md:px-16 lg:px-20">
+        <h1 className="text-center text-xl sm:text-2xl md:text-4xl tracking-widest mb-10">
+        NOTRE OBJECTIF EST DE RÉALISER VOTRE PROJET CRÉATIF !
         </h1>
         <button
           type="button"
           className="md:tracking-widest py-1.5 md:py-3 px-4 md:px-10 border border-white-500 hover:border-white-700"
         >
-          <h3 className="">BE INSPIRED</h3>
+          <h3 className="text-base sm:text-lg md:text-xl">BE INSPIRED</h3>
         </button>
       </div>
     </div>
