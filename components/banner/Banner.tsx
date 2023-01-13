@@ -16,7 +16,7 @@ export default function Banner({ bg }: banner) {
     >
       <div className="flex flex-col items-center justify-center h-screen text-white px-10 md:px-16 lg:px-20">
         <h1 className="text-center text-xl sm:text-2xl md:text-4xl tracking-widest mb-10">
-        NOTRE OBJECTIF EST DE RÉALISER VOTRE PROJET CRÉATIF !
+          NOTRE OBJECTIF EST DE RÉALISER VOTRE PROJET CRÉATIF !
         </h1>
         <button
           type="button"
