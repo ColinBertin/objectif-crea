@@ -40,7 +40,7 @@ export default function Footer() {
               <FaFacebookF size={30} />
             </li>
           </Link>
-          <Link href="https://twitter.com" target={"_blank"}>
+          <Link href="https://twitter.com/ObjectifCrea" target={"_blank"}>
             <li className="mr-4 text-md p-3 rounded bg-gray-700 hover:bg-gray-500">
               <AiOutlineTwitter size={30} />
             </li>
