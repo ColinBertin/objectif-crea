@@ -8,13 +8,13 @@ type menuProps = {
 export default function Menu({menuState}: menuProps) {
   return (
     <ul className={clsx(menuState ? "flex my-auto" : "flex my-auto")}>
-      <li className="mr-3">
+      <li className="mr-4 hover:underline">
         <Link href={"/"}>Top</Link>
       </li>
-      <li className="mr-4">
+      <li className="mr-4 hover:underline">
         <Link href={"/"}>À propos</Link>
       </li>
-      <li className="mr-4">
+      <li className="mr-4 hover:underline">
         <Link href={"/"}>Contacte</Link>
       </li>
     </ul>
