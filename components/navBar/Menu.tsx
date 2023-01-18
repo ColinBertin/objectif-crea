@@ -14,9 +14,9 @@ export default function Menu({menuState}: menuProps) {
       <li className="mr-4 hover:underline">
         <Link href={"/"}>À propos</Link>
       </li>
-      <li className="mr-4 hover:underline">
+      {/* <li className="mr-4 hover:underline">
         <Link href={"/"}>Contacte</Link>
-      </li>
+      </li> */}
     </ul>
   );
 }
