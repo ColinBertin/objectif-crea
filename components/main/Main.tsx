@@ -21,22 +21,22 @@ export default function Main() {
       <div className="pt-12 pb-20 md:pb-32 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-12 place-items-center text-gray-500">
         <CategoryCard
           title="Mariage"
-          link="/mariage"
+          link="/wedding"
           bg="/images/banner/mariage.png"
         />
         <CategoryCard
           title="Maternité"
-          link="/maternite"
+          link="/maternity"
           bg="/images/banner/maternite.jpg"
         />
         <CategoryCard
           title="Nouveau née"
-          link="/nouveauNee"
+          link="/newBorn"
           bg="/images/banner/nouveauNee.png"
         />
         <CategoryCard
           title="Évènement"
-          link="/evenement"
+          link="/evenment"
           bg="/images/banner/evenement.png"
         />
         <CategoryCard title="Landscape" />
