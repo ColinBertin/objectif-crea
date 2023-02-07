@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "Agency";
-  src: url("../fonts/AGENCYR.TTF");
+  src: url("/fonts/AGENCYR.TTF");
 }
 
 @font-face {
   font-family: "Calibri";
-  src: url("../fonts/Calibri.ttf");
+  src: url("/fonts/Calibri.ttf");
 }
 
 * {
