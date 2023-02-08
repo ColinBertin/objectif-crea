@@ -2,7 +2,7 @@ import CategoryCard from "./CategoryCard";
 
 export default function Main() {
   return (
-    <div className="text-center">
+    <div id="intro" className="text-center">
       <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
         <h3 className="mb-3 text-xl">— WE TAKE THE TIME TO —</h3>
         <p className="text-sm md:text-base leading-9 tracking-wide text-gray-500">
