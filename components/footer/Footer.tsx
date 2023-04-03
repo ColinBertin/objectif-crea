@@ -1,5 +1,7 @@
+
+
 import Image from "next/image";
-import router from "next/router";
+// import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import {
@@ -9,15 +11,16 @@ import {
 } from "react-icons/ai";
 
 export default function Footer() {
-  const handleClick = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
-    e.preventDefault();
-    router.push("/");
-  };
+  // const router = useRouter()
+  // const handleClick = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+  //   e.preventDefault();
+  //   router.push("/");
+  // };
 
   return (
     <footer className="bg-gray-800 px-12 py-10">
       <div className="mb-4">
-        <Link className="m-0 p-0" href={"/"} onClick={handleClick}>
+        <Link className="m-0 p-0" href={"/"}>
           <Image
             src="/images/logos/fullLogo.png"
             alt="logo"
