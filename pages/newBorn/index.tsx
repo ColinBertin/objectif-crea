@@ -1,5 +1,5 @@
 import Head from "next/head";
-import NavBar from "../../components/navBar/NavBarTest2";
+import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
 import Footer from "../../components/footer/Footer";
 
