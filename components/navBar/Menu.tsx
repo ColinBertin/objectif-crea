@@ -10,7 +10,7 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
   return (
     <ul
       className={clsx(
-        menuState ? "flex flex-col justify-center" : "hidden",
+        menuState ? "flex flex-col justify-center -mt-20 mb-20" : "hidden",
         "h-screen w-1/2 md:w-auto md:h-auto md:flex"
       )}
     >
