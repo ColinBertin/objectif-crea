@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BsChevronCompactDown } from "react-icons/bs";
+import { handleScroll } from "../../helpers";
 
 type banner = {
   bg: string;
@@ -21,7 +22,7 @@ export default function Banner({ bg }: banner) {
         <h1 className="text-center text-xl sm:text-2xl md:text-4xl tracking-widest mb-10">
           NOTRE OBJECTIF EST DE RÉALISER VOTRE PROJET CRÉATIF !
         </h1>
-        <Link href={"#intro"}>
+        <Link href={"#intro"} onClick={handleScroll}>
           <BsChevronCompactDown className="h-8 w-8 md:h-12 md:w-12" />
         </Link>
       </div>

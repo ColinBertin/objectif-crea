@@ -53,15 +53,15 @@ export default function Main() {
           debitis perspiciatis.
         </p>
       </div>
-      <div className="pt-12 pb-20 md:pb-32 md:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-12 text-gray-500">
-        {categories.map((category, index) => (
+      <div className="justify-items-center pt-12 pb-20 md:pb-32 md:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-12 text-gray-500">
+        {categories.map((category, index) =>
           <CategoryCard
             key={index}
             title={category.title}
             link={category.link}
             bg={category.bg}
           />
-        ))}
+        )}
       </div>
     </div>
   );
