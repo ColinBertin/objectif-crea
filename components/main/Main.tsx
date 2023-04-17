@@ -1,41 +1,7 @@
 import CategoryCard from "./CategoryCard";
+import { categories } from "../../helpers";
 
 export default function Main() {
-  const categories = [
-    {
-      title: "Mariage",
-      link: "/wedding",
-      bg: "/images/banner/mariage.png",
-    },
-    {
-      title: "Maternité",
-      link: "/maternity",
-      bg: "/images/banner/maternite.jpg",
-    },
-    {
-      title: "Nouveau née",
-      link: "/newBorn",
-      bg: "/images/banner/nouveauNee.png",
-    },
-    {
-      title: "Évènement",
-      link: "/evenment",
-      bg: "/images/banner/evenement.png",
-    },
-    {
-      title: "Landscape",
-    },
-    {
-      title: "Landscape",
-    },
-    {
-      title: "Landscape",
-    },
-    {
-      title: "Landscape",
-    },
-  ];
-
   return (
     <div id="intro" className="text-center">
       <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
