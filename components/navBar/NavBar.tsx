@@ -6,13 +6,14 @@ import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import Menu from "./Menu";
+import { Transition } from "@headlessui/react";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   const handleNavbar = () => {
-    setNavbar(!navbar)
-  }
+    setNavbar(!navbar);
+  };
 
   return (
     <nav className="w-full fixed top-0 left-0 right-0 z-10 bg-gray-700">
@@ -40,8 +41,19 @@ export default function NavBar() {
             )}
           </button>
         </div>
-        <div className="flex justify-center items-center px-6">
-           <Menu menuState={navbar} handleNavbar={handleNavbar} />
+        <div className="px-6">
+          <Transition
+            show={navbar}
+            className=" w-full flex justify-center items-center"
+            enter="transition ease-in-out duration-300 transform"
+            enterFrom="-translate-x-full"
+            enterTo="translate-x-0"
+            leave="transition ease-in-out duration-300 transform"
+            leaveFrom="translate-x-0"
+            leaveTo="-translate-x-full"
+          >
+            <Menu menuState={navbar} handleNavbar={handleNavbar} />
+          </Transition>
         </div>
       </div>
     </nav>
