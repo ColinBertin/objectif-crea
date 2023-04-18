@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { handleScroll } from "../../helpers";
+import { Transition } from "@headlessui/react";
 
 type menuProps = {
   menuState: boolean;
@@ -29,6 +30,16 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
         </li>
       </ul>
         {/* MOBILE PHONE MENU */}
+        <Transition
+            show={menuState}
+            className="w-full flex justify-center items-center"
+            enter="transition ease-in-out duration-300 transform"
+            enterFrom="-translate-x-full"
+            enterTo="translate-x-0"
+            leave="transition ease-in-out duration-300 transform"
+            leaveFrom="translate-x-0"
+            leaveTo="-translate-x-full"
+          >
         <ul
           className={clsx(
             menuState ? "flex flex-col justify-center -mt-20 mb-20" : "hidden",
@@ -46,6 +57,7 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
             </Link>
           </li>
         </ul>
+        </Transition>
     </>
   );
 }
