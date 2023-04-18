@@ -9,6 +9,7 @@ type banner = {
 export default function Banner({ bg }: banner) {
   return (
     <div
+      id="banner"
       className="w-screen h-screen"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url(${bg})`,
@@ -23,7 +24,7 @@ export default function Banner({ bg }: banner) {
           NOTRE OBJECTIF EST DE RÉALISER VOTRE PROJET CRÉATIF !
         </h1>
         <Link href={"#intro"} onClick={handleScroll}>
-          <BsChevronCompactDown className="h-8 w-8 md:h-12 md:w-12" />
+          <BsChevronCompactDown className="h-8 w-8 md:h-12 md:w-12 hover:text-gray-500" />
         </Link>
       </div>
     </div>

@@ -29,20 +29,20 @@ export default function NavBar() {
             />
           </Link>
           {/* HAMBURGER BUTTON FOR MOBILE */}
-          {/* <button
+          <button
             className="md:hidden text-white rounded-md outline-none"
-            onClick={() => setNavbar(!navbar)}
+            onClick={handleNavbar}
           >
             {navbar ? (
               <AiOutlineClose className="h-6 w-6 md:h-8 md:w-8" />
             ) : (
               <GiHamburgerMenu className="h-6 w-6 md:h-8 md:w-8" />
             )}
-          </button> */}
+          </button>
         </div>
-        {/* <div className="flex justify-center items-center px-6">
+        <div className="flex justify-center items-center px-6">
            <Menu menuState={navbar} handleNavbar={handleNavbar} />
-        </div> */}
+        </div>
       </div>
     </nav>
   );
