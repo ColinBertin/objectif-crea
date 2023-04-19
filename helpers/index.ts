@@ -22,15 +22,15 @@ export const categories = [
   {
     title: "Landscape",
   },
-  {
-    title: "Landscape",
-  },
-  {
-    title: "Landscape",
-  },
-  {
-    title: "Landscape",
-  },
+  // {
+  //   title: "Landscape",
+  // },
+  // {
+  //   title: "Landscape",
+  // },
+  // {
+  //   title: "Landscape",
+  // },
 ];
 
 export const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
