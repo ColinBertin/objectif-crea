@@ -18,15 +18,15 @@ export default function Footer() {
   // };
 
   return (
-    <footer className="bg-gray-800 px-12 py-10">
-      <div className="mb-4">
+    <footer className="flex justify-between flex-wrap md:block bg-gray-800 px-12 py-6">
+      <div className="mb-2 md:m-0">
         <Link className="m-0 p-0" href={"/"}>
           <Image
             src="/images/logos/fullLogo.png"
             alt="logo"
             quality={60}
-            width={150}
-            height={100}
+            width={130}
+            height={80}
           />
         </Link>
       </div>
@@ -39,26 +39,26 @@ export default function Footer() {
             href="https://www.facebook.com/profile.php?id=100077455703233"
             target={"_blank"}
           >
-            <li className="mr-4 text-md p-3 rounded bg-gray-700 hover:bg-gray-500">
-              <FaFacebookF size={30} />
+            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-500">
+              <FaFacebookF size={20} />
             </li>
           </Link>
           <Link href="https://twitter.com/ObjectifCrea" target={"_blank"}>
-            <li className="mr-4 text-md p-3 rounded bg-gray-700 hover:bg-gray-500">
-              <AiOutlineTwitter size={30} />
+            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-500">
+              <AiOutlineTwitter size={20} />
             </li>
           </Link>
           <Link
             href="https://www.instagram.com/objectif_crea"
             target={"_blank"}
           >
-            <li className="mr-4 text-md p-3 rounded bg-gray-700 hover:bg-gray-500">
-              <AiFillInstagram size={30} />
+            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-500">
+              <AiFillInstagram size={20} />
             </li>
           </Link>
           <Link href="https://www.linkedin.com/in/objectif-cr%C3%A9a-756144255/" target={"_blank"}>
-            <li className="text-md p-3 rounded bg-gray-700 hover:bg-gray-500">
-              <AiFillLinkedin size={30} />
+            <li className="text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-500">
+              <AiFillLinkedin size={20} />
             </li>
           </Link>
         </ul>
