@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import { BsChevronCompactDown } from "react-icons/bs";
 import { handleScroll } from "../../helpers";
