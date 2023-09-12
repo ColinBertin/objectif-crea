@@ -16,7 +16,7 @@ export const categories = [
   },
   {
     title: "Évènement",
-    link: "/evenment",
+    link: "/event",
     bg: "/images/banner/evenement.png",
   },
   {
