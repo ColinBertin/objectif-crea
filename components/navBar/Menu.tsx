@@ -11,7 +11,6 @@ type menuProps = {
 };
 
 export default function Menu({ menuState, handleNavbar }: menuProps) {
-
   useEffect(() => {
     if (menuState) {
       document.body.classList.add("overflow-y-hidden");
@@ -33,9 +32,9 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
             Top
           </Link>
         </li>
-        <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
+        {/* <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
           <Link href={"/"}>À propos</Link>
-        </li>
+        </li> */}
         <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
           <Link href={"/"}>Contact</Link>
         </li>
