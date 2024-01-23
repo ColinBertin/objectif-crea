@@ -41,6 +41,4 @@ const photos = unsplashPhotos.map((photo) => ({
   }),
 }));
 
-console.log("photos", photos);
-
 export default photos;

@@ -7,7 +7,10 @@ export default function NextJsImage({
   wrapperStyle,
 }: RenderPhotoProps) {
   return (
-    <div style={{ ...wrapperStyle, position: "relative" }}>
+    <div
+      className="filter sepia hover:sepia-0 ease-in duration-300"
+      style={{ ...wrapperStyle, position: "relative" }}
+    >
       <Image
         fill
         src={photo}
