@@ -9,10 +9,6 @@ type banner = {
 };
 
 export default function Banner({ bg }: banner) {
-  const test = () => {
-    console.log("helooooooooooo");
-  };
-
   return (
     <div
       id="banner"
@@ -29,9 +25,6 @@ export default function Banner({ bg }: banner) {
         <h1 className="text-center text-xl sm:text-2xl md:text-4xl tracking-widest mb-10">
           NOTRE OBJECTIF EST DE RÉALISER VOTRE PROJET CRÉATIF !
         </h1>
-        <button className="border-2 border-red-500" onClick={test}>
-          Click
-        </button>
 
         <Link href={"#intro"} onClick={handleScroll}>
           <BsChevronCompactDown className="h-8 w-8 md:h-12 md:w-12 hover:text-gray-500" />
