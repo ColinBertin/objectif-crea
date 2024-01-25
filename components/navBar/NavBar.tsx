@@ -11,8 +11,8 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   const handleNavbar = () => {
-    setNavbar(!navbar)
-  }
+    setNavbar(!navbar);
+  };
 
   return (
     <nav className="w-full fixed top-0 left-0 right-0 z-10 bg-gray-800">
@@ -41,7 +41,7 @@ export default function NavBar() {
           </button>
         </div>
         <div className="flex justify-center items-center px-6">
-           <Menu menuState={navbar} handleNavbar={handleNavbar} />
+          <Menu menuState={navbar} handleNavbar={handleNavbar} />
         </div>
       </div>
     </nav>

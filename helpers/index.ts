@@ -37,11 +37,11 @@ export const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>)
   // first prevent the default behavior
   e.preventDefault();
   // get the href and remove everything before the hash (#)
+  console.log("Hellooooooo");
   const href = e.currentTarget.href;
   const targetId = href.replace(/.*\#/, "");
   // get the element by id and use scrollIntoView
   const elem = document.getElementById(targetId);
-  console.log("hello")
   elem?.scrollIntoView({
     behavior: "smooth",
   });

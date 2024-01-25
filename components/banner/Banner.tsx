@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import Link from "next/link";
 import { BsChevronCompactDown } from "react-icons/bs";
 import { handleScroll } from "../../helpers";
@@ -8,6 +9,10 @@ type banner = {
 };
 
 export default function Banner({ bg }: banner) {
+  const test = () => {
+    console.log("hello");
+  };
+
   return (
     <div
       id="banner"
@@ -24,6 +29,12 @@ export default function Banner({ bg }: banner) {
         <h1 className="text-center text-xl sm:text-2xl md:text-4xl tracking-widest mb-10">
           NOTRE OBJECTIF EST DE RÉALISER VOTRE PROJET CRÉATIF !
         </h1>
+        <button
+          onClick={test}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Button
+        </button>
         <Link href={"#intro"} onClick={handleScroll}>
           <BsChevronCompactDown className="h-8 w-8 md:h-12 md:w-12 hover:text-gray-500" />
         </Link>
