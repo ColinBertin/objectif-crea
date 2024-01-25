@@ -1,6 +1,7 @@
 import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
 import Footer from "../../components/footer/Footer";
+import Masonry from "../../components/masonry/Masonry";
 import { categories } from "../../helpers";
 import CategoryCard from "../../components/main/CategoryCard";
 
@@ -24,6 +25,9 @@ export default function WeddingPage() {
             quibusdam amet iste sit veniam, minima recusandae incidunt fugiat,
             voluptatem commodi natus debitis!
           </p>
+        </div>
+        <div className="px-10 pb-8 md:px-24 md:pb-20">
+          <Masonry />
         </div>
         <div className="justify-items-center pt-12 pb-20 md:pb-32 md:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-12 text-gray-500">
           {categories.map((category, index) => {

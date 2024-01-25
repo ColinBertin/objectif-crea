@@ -9,6 +9,10 @@ type banner = {
 };
 
 export default function Banner({ bg }: banner) {
+  const test = () => {
+    console.log("hello");
+  };
+
   return (
     <div
       id="banner"
