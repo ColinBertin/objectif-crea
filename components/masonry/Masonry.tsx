@@ -8,34 +8,31 @@ import photos from "./photos";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 export default function Masonry() {
   const [index, setIndex] = useState(-1);
+  const [open, setOpen] = useState(false);
 
-  const [num, setNum] = useState(0);
+  const handleLightBox = (index: number) => {
+    setIndex(index);
+    setOpen(true);
+  };
+
+  const handleCloseLightBox = () => {
+    setOpen(false);
+    setIndex(-1);
+  };
 
   return (
     <>
-      <button
-        onClick={() => setNum((prev) => (prev += 1))}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
-        Button
-      </button>
       <PhotoAlbum
         photos={photos}
         layout="rows"
         renderPhoto={NextJsImage}
         defaultContainerWidth={1200}
-        onClick={({ index }) => {
-          console.log(index);
-          setIndex(index);
-        }}
+        onClick={({ index: current }) => handleLightBox(current)}
         sizes={{
           size: "calc(100vw - 40px)",
           sizes: [
@@ -48,11 +45,11 @@ export default function Masonry() {
 
       <Lightbox
         slides={photos}
-        open={index >= 0}
+        open={open}
         index={index}
-        close={() => setIndex(-1)}
+        close={handleCloseLightBox}
         // enable optional lightbox plugins
-        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+        plugins={[Thumbnails]}
       />
     </>
   );

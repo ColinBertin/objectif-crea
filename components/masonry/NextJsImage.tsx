@@ -6,19 +6,8 @@ export default function NextJsImage({
   imageProps: { alt, title, sizes, className, onClick },
   wrapperStyle,
 }: RenderPhotoProps) {
-  // const func = () => {
-  //   console.log("Hello");
-  // };
-
   return (
     <>
-      {/* <button
-        className="-mt-1 inline-flex rounded-md align-middle text-gray-50 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 print:hidden"
-        type="button"
-        onClick={func}
-      >
-        Push
-      </button> */}
       <div
         className="filter sepia hover:sepia-0 ease-in duration-300 cursor-pointer"
         style={{ ...wrapperStyle, position: "relative" }}
@@ -34,3 +23,57 @@ export default function NextJsImage({
     </>
   );
 }
+
+// import Image from "next/image";
+// import {
+//   isImageFitCover,
+//   isImageSlide,
+//   useLightboxProps,
+// } from "yet-another-react-lightbox";
+
+// function isNextJsImage(slide) {
+//   return (
+//     isImageSlide(slide) &&
+//     typeof slide.width === "number" &&
+//     typeof slide.height === "number"
+//   );
+// }
+
+// export default function NextJsImage({ slide, rect }) {
+//   const { imageFit } = useLightboxProps().carousel;
+//   const cover = isImageSlide(slide) && isImageFitCover(slide, imageFit);
+
+//   if (!isNextJsImage(slide)) return undefined;
+
+//   // const width = !cover
+//   //   ? Math.round(
+//   //       Math.min(rect.width, (rect.height / slide.height) * slide.width)
+//   //     )
+//   //   : rect.width;
+
+//   // const height = !cover
+//   //   ? Math.round(
+//   //       Math.min(rect.height, (rect.width / slide.width) * slide.height)
+//   //     )
+//   //   : rect.height;
+
+//   // console.log(width, height);
+
+//   return (
+//     <div
+//       // className="filter sepia hover:sepia-0 ease-in duration-300 cursor-pointer"
+//       style={{ position: "relative", width: rect.width, height: rect.height }}
+//     >
+//       <Image
+//         fill
+//         alt=""
+//         src={slide}
+//         loading="eager"
+//         draggable={false}
+//         placeholder={slide.blurDataURL ? "blur" : undefined}
+//         style={{ objectFit: cover ? "cover" : "contain" }}
+//         sizes="(max-width: 768px) 100vw, 33vw"
+//       />
+//     </div>
+//   );
+// }
