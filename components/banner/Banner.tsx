@@ -6,13 +6,10 @@ import { handleScroll } from "../../helpers";
 
 type banner = {
   bg: string;
+  title?: string;
 };
 
-export default function Banner({ bg }: banner) {
-  const test = () => {
-    console.log("hello");
-  };
-
+export default function Banner({ bg, title }: banner) {
   return (
     <div
       id="banner"
@@ -26,8 +23,15 @@ export default function Banner({ bg }: banner) {
       }}
     >
       <div className="flex flex-col items-center justify-center h-screen text-white px-10 md:px-16 lg:px-20">
-        <h1 className="text-center text-xl sm:text-2xl md:text-4xl tracking-widest mb-10">
-          NOTRE OBJECTIF EST DE RÉALISER VOTRE PROJET CRÉATIF !
+        {title && (
+          <h3 className="mb-10 text-xl uppercase">
+            — Objectif Créa Collection —
+          </h3>
+        )}
+        <h1 className="text-center text-xl sm:text-2xl md:text-4xl lg:text-6xl xl:text-8xl tracking-widest mb-10 uppercase">
+          {title
+            ? `${title}`
+            : "NOTRE OBJECTIF EST DE RÉALISER VOTRE PROJET CRÉATIF !"}
         </h1>
 
         <Link href={"#intro"} onClick={handleScroll}>

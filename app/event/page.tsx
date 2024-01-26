@@ -14,7 +14,7 @@ export default function EventPage() {
     <>
       <div>
         <NavBar />
-        <Banner bg="/images/banner/evenement.png" />
+        <Banner bg="/images/banner/evenement.png" title="Évènement" />
       </div>
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">

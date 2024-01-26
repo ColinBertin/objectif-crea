@@ -14,7 +14,7 @@ export default function WeddingPage() {
     <div className="bg-gray-500">
       <div>
         <NavBar />
-        <Banner bg="/images/banner/mariage.png" />
+        <Banner bg="/images/banner/mariage.png" title="Mariage" />
       </div>
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
