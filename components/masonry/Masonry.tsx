@@ -4,14 +4,18 @@ import PhotoAlbum from "react-photo-album";
 
 import { useState } from "react";
 import NextJsImage from "./NextJsImage";
-import photos from "./photos";
+import photos, { photos2, photos3, photos4 } from "./photos";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-export default function Masonry() {
+type MasonryProps = {
+  category: number;
+};
+
+export default function Masonry({ category }: MasonryProps) {
   const [index, setIndex] = useState(-1);
   const [open, setOpen] = useState(false);
 
@@ -25,10 +29,25 @@ export default function Masonry() {
     setIndex(-1);
   };
 
+  const handleCategory = (cat: number) => {
+    switch (cat) {
+      case 1:
+        return photos;
+      case 2:
+        return photos2;
+      case 3:
+        return photos3;
+      case 4:
+        return photos4;
+      default:
+        break;
+    }
+  };
+
   return (
     <>
       <PhotoAlbum
-        photos={photos}
+        photos={handleCategory(category) as any}
         layout="rows"
         renderPhoto={NextJsImage}
         defaultContainerWidth={1200}
@@ -44,7 +63,7 @@ export default function Masonry() {
       />
 
       <Lightbox
-        slides={photos}
+        slides={handleCategory(category)}
         open={open}
         index={index}
         close={handleCloseLightBox}
