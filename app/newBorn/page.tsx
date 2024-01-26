@@ -5,7 +5,7 @@ import { categories } from "../../helpers";
 import CategoryCard from "../../components/main/CategoryCard";
 
 export const metadata = {
-  title: "Nouveau née",
+  title: "Nouveau né",
 };
 
 export default function NewBornPage() {
@@ -13,7 +13,7 @@ export default function NewBornPage() {
     <>
       <div>
         <NavBar />
-        <Banner bg="/images/banner/nouveauNee.png" />
+        <Banner bg="/images/banner/nouveauNe.png" />
       </div>
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
@@ -27,7 +27,7 @@ export default function NewBornPage() {
         </div>
         <div className="justify-items-center pt-12 pb-20 md:pb-32 md:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-12 text-gray-500">
           {categories.map((category, index) => {
-            if (category.title !== "Nouveau née") {
+            if (category.title !== "Nouveau né") {
               return (
                 <CategoryCard
                   key={index}

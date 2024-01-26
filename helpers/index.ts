@@ -10,9 +10,9 @@ export const categories = [
     bg: "/images/banner/maternite.jpg",
   },
   {
-    title: "Nouveau Née",
+    title: "Nouveau Né",
     link: "/newBorn",
-    bg: "/images/banner/nouveauNee.png",
+    bg: "/images/banner/nouveauNe.png",
   },
   {
     title: "Évènement",
