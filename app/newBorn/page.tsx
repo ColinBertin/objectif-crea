@@ -18,7 +18,7 @@ export default function NewBornPage() {
     <>
       <div>
         <NavBar />
-        <Banner bg="/images/banner/nouveauNe.png" title="Nouveau né" />
+        <Banner bg="/images/banner/nouveauNeSmall.png" title="Nouveau né" />
       </div>
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">

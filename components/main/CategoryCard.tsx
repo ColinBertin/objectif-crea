@@ -15,7 +15,7 @@ export default function CategoryCard({ title, link, bg }: categoryCard) {
         <div className="relative block h-40 bg-white object-fill">
           <Image
             className=""
-            src={bg ? bg : "/images/banner/bannerImg1.png"}
+            src={bg ? bg : "/images/banner/bannerImg1small.png"}
             fill
             alt={title}
             sizes="(max-width: 768px) 100vw,
