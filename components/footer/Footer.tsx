@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 // import { useRouter } from "next/navigation";
@@ -31,7 +31,7 @@ export default function Footer() {
         </Link>
       </div>
       <div className="flex justify-between">
-        <p className="hidden md:inline-block text-gray-500 my-auto text-sm">
+        <p className="hidden md:inline-block text-gray-300 my-auto text-sm">
           © Copyright 2012 - 2022 | All Rights Reserved
         </p>
         <ul className="flex text-gray-600">
@@ -39,12 +39,12 @@ export default function Footer() {
             href="https://www.facebook.com/profile.php?id=100077455703233"
             target={"_blank"}
           >
-            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-500">
+            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300">
               <FaFacebookF size={20} />
             </li>
           </Link>
           <Link href="https://twitter.com/ObjectifCrea" target={"_blank"}>
-            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-500">
+            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300">
               <AiOutlineTwitter size={20} />
             </li>
           </Link>
@@ -52,12 +52,15 @@ export default function Footer() {
             href="https://www.instagram.com/objectif_crea"
             target={"_blank"}
           >
-            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-500">
+            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300">
               <AiFillInstagram size={20} />
             </li>
           </Link>
-          <Link href="https://www.linkedin.com/in/objectif-cr%C3%A9a-756144255/" target={"_blank"}>
-            <li className="text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-500">
+          <Link
+            href="https://www.linkedin.com/in/objectif-cr%C3%A9a-756144255/"
+            target={"_blank"}
+          >
+            <li className="text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300">
               <AiFillLinkedin size={20} />
             </li>
           </Link>

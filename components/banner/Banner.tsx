@@ -31,7 +31,7 @@ export default function Banner({ bg }: banner) {
         </h1>
 
         <Link href={"#intro"} onClick={handleScroll}>
-          <BsChevronCompactDown className="h-8 w-8 md:h-12 md:w-12 hover:text-gray-500" />
+          <BsChevronCompactDown className="h-8 w-8 md:h-12 md:w-12 hover:text-gray-300" />
         </Link>
       </div>
     </div>
