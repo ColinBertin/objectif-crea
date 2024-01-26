@@ -10,6 +10,10 @@ export const metadata = {
 };
 
 export default function WeddingPage() {
+  const filteredCategories = () => {
+    return categories.filter((cat) => cat.title !== "Mariage");
+  };
+
   return (
     <div className="bg-gray-500">
       <div>
@@ -35,18 +39,20 @@ export default function WeddingPage() {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit
             </h4>
           </div>
-          <div className="justify-items-center pt-12 pb-20 md:pb-32 md:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-12 text-gray-300">
-            {categories.map((category, index) => {
-              if (category.title !== "Mariage") {
-                return (
-                  <CategoryCard
-                    key={index}
-                    title={category.title}
-                    link={category.link}
-                    bg={category.bg}
-                  />
-                );
-              }
+          <div
+            className={`pt-12 pb-20 md:pb-32 md:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-${
+              filteredCategories().length > 3 ? 4 : 3
+            } gap-10 md:gap-12 text-gray-300 place-items-center`}
+          >
+            {filteredCategories().map((category) => {
+              return (
+                <CategoryCard
+                  key={category.title}
+                  title={category.title}
+                  link={category.link}
+                  bg={category.bg}
+                />
+              );
             })}
           </div>
         </>
