@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { BsChevronCompactDown } from "react-icons/bs";
 import { handleScroll } from "../../helpers";
+import { usePathname } from "next/navigation";
 
 type banner = {
   bg: string;
@@ -10,6 +11,8 @@ type banner = {
 };
 
 export default function Banner({ bg, title }: banner) {
+  const isHomePage = usePathname()?.endsWith("/");
+
   return (
     <div
       id="banner"
@@ -28,7 +31,11 @@ export default function Banner({ bg, title }: banner) {
             — Objectif Créa Collection —
           </h3>
         )}
-        <h1 className="text-center text-xl sm:text-2xl md:text-4xl lg:text-6xl xl:text-8xl tracking-widest mb-10 uppercase">
+        <h1
+          className={`text-center text-lg sm:text-xl lg:${
+            isHomePage ? "text-2xl" : "text-4xl"
+          } tracking-widest mb-10 uppercase`}
+        >
           {title
             ? `${title}`
             : "NOTRE OBJECTIF EST DE RÉALISER VOTRE PROJET CRÉATIF !"}
