@@ -31,8 +31,8 @@ export default function Banner({ bg, title }: banner) {
           </h4>
         )}
         <h1
-          className={`text-center text-${
-            pathName?.endsWith("/") ? "2xl" : "3xl"
+          className={`text-center ${
+            pathName?.endsWith("/") ? "text-2xl" : "text-3xl"
           } md:text-4xl lg:text-5xl tracking-widest mb-10 uppercase`}
         >
           {title
