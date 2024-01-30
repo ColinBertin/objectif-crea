@@ -15,7 +15,7 @@ export default function WeddingPage() {
   };
 
   return (
-    <div className="bg-gray-500">
+    <>
       <div>
         <NavBar />
         <Banner bg="/images/banner/mariageSmall.png" title="Mariage" />
@@ -33,7 +33,7 @@ export default function WeddingPage() {
         <div className="px-10 pb-8 md:px-24 md:pb-20">
           <Masonry category={4} />
         </div>
-        <>
+        <div className="bg-gray-500">
           <div className="pt-8 md:pt-20 mb-3">
             <h4 className="uppercase text-white">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit
@@ -55,9 +55,9 @@ export default function WeddingPage() {
               );
             })}
           </div>
-        </>
+        </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
