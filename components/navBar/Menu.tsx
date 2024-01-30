@@ -36,7 +36,7 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
           <Link href={"/"}>À propos</Link>
         </li> */}
         <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
-          <Link href={"/"}>Contact</Link>
+          <Link href={"/about-me"}>About Me</Link>
         </li>
       </ul>
       {/* MOBILE PHONE MENU */}
