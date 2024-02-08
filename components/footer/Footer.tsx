@@ -18,7 +18,7 @@ export default function Footer() {
   // };
 
   return (
-    <footer className="flex justify-between items-center flex-wrap md:block bg-gray-800 px-12 py-6">
+    <footer className="flex justify-between items-center flex-wrap md:block bg-gray-800 px-6 sm:px-12 py-6">
       <Link href={"/"}>
         <Image
           src="/images/logos/logoW.png"

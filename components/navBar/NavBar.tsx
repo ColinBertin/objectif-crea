@@ -24,8 +24,8 @@ export default function NavBar() {
               src="/images/logos/logoW.png"
               alt="logo"
               quality={60}
-              width={50}
-              height={50}
+              width={40}
+              height={40}
             />
           </Link>
           {/* HAMBURGER BUTTON FOR MOBILE */}
