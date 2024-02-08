@@ -18,18 +18,16 @@ export default function Footer() {
   // };
 
   return (
-    <footer className="flex justify-between flex-wrap md:block bg-gray-800 px-12 py-6">
-      <div className="mb-2 md:m-0">
-        <Link className="m-0 p-0" href={"/"}>
-          <Image
-            src="/images/logos/fullLogo.png"
-            alt="logo"
-            quality={60}
-            width={130}
-            height={80}
-          />
-        </Link>
-      </div>
+    <footer className="flex justify-between items-center flex-wrap md:block bg-gray-800 px-12 py-6">
+      <Link href={"/"}>
+        <Image
+          src="/images/logos/logoW.png"
+          alt="logo"
+          quality={60}
+          width={50}
+          height={50}
+        />
+      </Link>
       <div className="flex justify-between">
         <p className="hidden md:inline-block text-gray-300 my-auto text-sm">
           © Copyright 2012 - 2022 | All Rights Reserved

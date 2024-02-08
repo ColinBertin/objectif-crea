@@ -7,6 +7,18 @@ export async function generateMetadata() {
       default: "Objectif Créa",
       template: `%s | Objectif Créa`,
     },
+    icons: {
+      icon: [
+        {
+          url: "/dark-favicon.ico",
+          media: "(prefers-color-scheme: light)",
+        },
+        {
+          url: "/light-favicon.ico",
+          media: "(prefers-color-scheme: dark)",
+        },
+      ],
+    },
   };
 }
 
