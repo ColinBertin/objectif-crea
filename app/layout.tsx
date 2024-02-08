@@ -10,12 +10,12 @@ export async function generateMetadata() {
     icons: {
       icon: [
         {
-          url: "/dark-favicon.ico",
-          media: "(prefers-color-scheme: light)",
+          media: "(prefers-color-scheme: dark)",
+          url: "/light-favicon.ico",
         },
         {
-          url: "/light-favicon.ico",
-          media: "(prefers-color-scheme: dark)",
+          media: "(prefers-color-scheme: light)",
+          url: "/dark-favicon.ico",
         },
       ],
     },
