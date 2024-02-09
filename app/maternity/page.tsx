@@ -35,9 +35,7 @@ export default function MaternityPage() {
         </div>
         <div className="bg-gray-500">
           <div className="pt-8 md:pt-20 mb-3">
-            <h4 className="uppercase text-white">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit
-            </h4>
+            <h3 className="uppercase text-white tracking-wide">Catégories</h3>
           </div>
           <div
             className={`pt-12 pb-20 md:pb-32 md:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-${

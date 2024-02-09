@@ -16,11 +16,9 @@ export default function CategoryCard({ title, link, bg }: categoryCard) {
           <Image
             className=""
             src={bg ? bg : "/images/banner/bannerImg1small.png"}
-            fill
             alt={title}
-            sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+            fill
+            style={{ objectFit: "cover" }}
           />
         </div>
         <div className="flex flex-row py-5 bg-gray-800">
