@@ -25,6 +25,25 @@ const unsplashingPhoto = (photos: unsplashPhoto[]) => {
 }));
 }
 
+export const wedding = [{
+  src: "/categories/wedding/wedding1.png", width: 1080, height: 800
+},
+{
+  src: "/categories/wedding/wedding2.png", width: 1080, height: 800
+},
+{
+  src: "/categories/wedding/wedding3.png", width: 1080, height: 800
+},
+{
+  src: "/categories/wedding/wedding4.png", width: 1080, height: 800
+},
+{
+  src: "/categories/wedding/wedding5.png", width: 1080, height: 800
+},
+{
+  src: "/categories/wedding/wedding6.png", width: 1080, height: 800
+}]
+
 const unsplashPhotos = [
   { id: "8gVv6nxq6gY", width: 1080, height: 800 },
   { id: "Dhmn6ete6g8", width: 1080, height: 1620 },
@@ -62,9 +81,13 @@ const unsplashPhotos4 = [
   { id: "xKhtkhc9HbQ", width: 1080, height: 1440 },
 ];
 
+// export const weddingPhotos = unsplashingPhoto(wedding)
+
 const photos = unsplashingPhoto(unsplashPhotos)
 export const photos2 = unsplashingPhoto(unsplashPhotos2)
 export const photos3 = unsplashingPhoto(unsplashPhotos3)
 export const photos4 = unsplashingPhoto(unsplashPhotos4)
+
+console.log(photos2)
 
 export default photos;

@@ -4,7 +4,7 @@ import PhotoAlbum from "react-photo-album";
 
 import { useState } from "react";
 import NextJsImage from "./NextJsImage";
-import photos, { photos2, photos3, photos4 } from "./photos";
+import photos, { photos2, photos3, photos4, wedding } from "./photos";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -24,6 +24,8 @@ export default function Masonry({ category }: MasonryProps) {
     setOpen(true);
   };
 
+  console.log(wedding);
+
   const handleCloseLightBox = () => {
     setOpen(false);
     setIndex(-1);
@@ -38,7 +40,7 @@ export default function Masonry({ category }: MasonryProps) {
       case 3:
         return photos3;
       case 4:
-        return photos4;
+        return wedding;
       default:
         break;
     }
