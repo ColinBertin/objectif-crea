@@ -2,7 +2,7 @@ export const categories = [
   {
     title: "Mariage",
     link: "/wedding",
-    bg: "/images/banner/mariageSmall.png",
+    bg: "/images/banner/mariageBig.png",
   },
   {
     title: "Maternité",
@@ -19,22 +19,9 @@ export const categories = [
     link: "/event",
     bg: "/images/banner/evenementSmall.png",
   },
-  // {
-  //   title: "Landscape",
-  // },
-  // {
-  //   title: "Landscape",
-  // },
-  // {
-  //   title: "Landscape",
-  // },
-  // {
-  //   title: "Landscape",
-  // },
 ];
 
 export const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-  // first prevent the default behavior
   e.preventDefault();
   // get the href and remove everything before the hash (#)
   const href = e.currentTarget.href;
