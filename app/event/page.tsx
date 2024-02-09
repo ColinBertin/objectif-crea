@@ -26,7 +26,7 @@ export default function EventPage() {
             Racontant Votre Histoire : Photographie d&apos;Événement à Bruxelles
           </h3>
           <p className="text-sm md:text-base leading-9 tracking-wide text-gray-300">
-            haque événement a une histoire à raconter, des éclats de rire
+            Chaque événement a une histoire à raconter, des éclats de rire
             partagés aux moments de célébration authentiques. Que ce soit pour
             un anniversaire, une remise de diplôme, ou tout autre événement
             spécial, je capture l&apos;essence de votre occasion avec des images
