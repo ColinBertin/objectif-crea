@@ -19,6 +19,9 @@ export default function CategoryCard({ title, link, bg }: categoryCard) {
             alt={title}
             fill
             style={{ objectFit: "cover" }}
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
           />
         </div>
         <div className="flex flex-row py-5 bg-gray-800">
