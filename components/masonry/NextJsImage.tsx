@@ -9,7 +9,7 @@ export default function NextJsImage({
   return (
     <>
       <div
-        className="filter sepia hover:sepia-0 ease-in duration-300 cursor-pointer"
+        className="filter lg:sepia lg:hover:sepia-0 ease-in duration-300 cursor-pointer"
         style={{ ...wrapperStyle, position: "relative" }}
       >
         <Image
