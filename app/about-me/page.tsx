@@ -17,7 +17,7 @@ export default function AboutMePage() {
         <Banner bg="/images/banner/man2.png" title="Adam Krings" />
       </div>
       <div id="intro" className="text-center">
-        <div className="px-10 py-8 lg:px-40 lg:py-20">
+        <section className="px-10 py-8 lg:px-40 lg:py-20">
           <h4 className="mb-6 text-white">
             À Propos d&apos;Adam Krings, Photographe
           </h4>
@@ -30,8 +30,8 @@ export default function AboutMePage() {
             numérique pour créer des œuvres captivantes qui racontent des
             histoires.
           </p>
-        </div>
-        <div className="flex justify-center items-center space-y-8 px-10 py-8 lg:px-20 xl:px-40 lg:py-20 flex-wrap">
+        </section>
+        <section className="flex justify-center items-center space-y-8 px-10 py-8 lg:px-20 xl:px-40 lg:py-20 flex-wrap">
           <div className="flex flex-col justify-center lg:w-1/2">
             <h4 className="mb-6 text-white">Mon Voyage Photographique</h4>
             <p className="text-sm md:text-base lg:text-lg leading-7 lg:leading-9 md:p-4 tracking-wide text-gray-300">
@@ -53,8 +53,8 @@ export default function AboutMePage() {
               height={550}
             />
           </div>
-        </div>
-        <div className="flex flex-row-reverse justify-center items-center space-y-8 px-10 py-8 lg:px-20 xl:px-40 lg:py-20 flex-wrap">
+        </section>
+        <section className="flex flex-row-reverse justify-center items-center space-y-8 px-10 py-8 lg:px-20 xl:px-40 lg:py-20 flex-wrap">
           <div className="flex flex-col justify-center md:w-1/2">
             <h4 className="mb-6 text-white">Mon Approche</h4>
             <p className="text-sm md:text-base lg:text-lg leading-7 lg:leading-9 md:p-4 tracking-wide text-gray-300">
@@ -75,7 +75,7 @@ export default function AboutMePage() {
               height={550}
             />
           </div>
-        </div>
+        </section>
         {/* <div className="flex flex-col px-10 py-8 lg:px-40 lg:py-20 text-white">
           <h4 className="mb-6">Mes Services</h4>
           <p className="text-sm md:text-base lg:text-lg leading-9 tracking-wide text-gray-300">
