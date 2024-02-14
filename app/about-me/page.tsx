@@ -35,13 +35,16 @@ export default function AboutMePage() {
           <div className="flex flex-col justify-center lg:w-1/2">
             <h4 className="mb-6 text-white">Mon Voyage Photographique</h4>
             <p className="text-base lg:text-lg leading-7 lg:leading-9 md:p-4 tracking-wide text-gray-300">
-              Bienvenue sur le portfolio d&apos;Adam Krings, un photographe
-              passionné qui a su évoluer avec son art, passant de la chambre
-              noire traditionnelle au dynamisme du numérique. Diplômé en arts et
-              techniques visuels, Adam combine son amour pour la photographie
-              traditionnelle avec les possibilités infinies offertes par le
-              numérique pour créer des œuvres captivantes qui racontent des
-              histoires.
+              Mon amour pour la photographie a commencé dans l&apos;intimité
+              d&apos;un laboratoire, où j&apos;ai appris à développer mes
+              photos, capturant l&apos;essence du moment dans chaque goutte de
+              révélateur. Cette période a été fondamentale, m&apos;enseignant la
+              patience, le détail, et le respect pour chaque image. Avec
+              l&apos;avènement du numérique, j&apos;ai embrassé cette nouvelle
+              ère, me permettant de fusionner techniques classiques et
+              innovations modernes. Mon diplôme en arts et techniques visuels
+              n&apos;a été que le début d&apos;un voyage sans fin à travers
+              l&apos;exploration et la création visuelle.
             </p>
           </div>
           <div className="md:w-1/2 flex lg:justify-end">
