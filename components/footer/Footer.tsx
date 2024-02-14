@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import {
-  AiOutlineTwitter,
+  // AiOutlineTwitter,
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
@@ -41,11 +41,11 @@ export default function Footer() {
               <FaFacebookF size={20} />
             </li>
           </Link>
-          <Link href="https://twitter.com/ObjectifCrea" target={"_blank"}>
+          {/* <Link href="https://twitter.com/ObjectifCrea" target={"_blank"}>
             <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300">
               <AiOutlineTwitter size={20} />
             </li>
-          </Link>
+          </Link> */}
           <Link
             href="https://www.instagram.com/objectif_crea"
             target={"_blank"}

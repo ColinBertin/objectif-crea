@@ -25,7 +25,7 @@ export default function NewBornPage() {
           <h3 className="mb-3 text-xl">
             Les Premiers Jours : Capturer la Douceur des Nouveaux Nés
           </h3>
-          <p className="text-sm md:text-base lg:text-lg leading-9 tracking-wide text-gray-300">
+          <p className="text-base leading-9 tracking-wide text-gray-300">
             Immortalisez la douceur, la pureté et les détails si précieux des
             premiers jours de votre nouveau-né avec des photographies qui
             parlent au cœur. Spécialisé dans la photographie de nouveaux nés, je
