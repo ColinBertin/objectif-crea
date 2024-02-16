@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { Transition } from "@headlessui/react";
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 type menuProps = {
   menuState: boolean;
@@ -18,6 +19,8 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
     }
   }, [menuState]);
 
+  const pathname = usePathname();
+
   return (
     <>
       {/* DESKTOP MENU */}
@@ -26,9 +29,11 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
           "h-screen w-1/2 md:w-auto md:h-auto md:flex hidden md:block"
         )}
       >
-        <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
-          <Link href={"/about-me"}>À Propos</Link>
-        </li>
+        {!pathname?.endsWith("/about-me") && (
+          <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
+            <Link href={"/about-me"}>À Propos</Link>
+          </li>
+        )}
       </ul>
       {/* MOBILE PHONE MENU */}
       <Transition
