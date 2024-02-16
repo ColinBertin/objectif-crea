@@ -23,7 +23,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label className="block mb-2 text-sm font-medium text-white">
-            Suject
+            Sujet
           </label>
           <input
             type="text"

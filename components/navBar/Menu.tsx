@@ -1,7 +1,6 @@
 "use client";
 import clsx from "clsx";
 import Link from "next/link";
-import { handleScroll } from "../../helpers";
 import { Transition } from "@headlessui/react";
 import { useEffect } from "react";
 
@@ -69,7 +68,7 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
             </Link>
           </li>
           <li className="pb-6 text-white py-6 text-center border-b-2 hover:text-gray-300">
-            <Link href={"/"} onClick={handleNavbar}>
+            <Link href={"/about-me"} onClick={handleNavbar}>
               À propos
             </Link>
           </li>
