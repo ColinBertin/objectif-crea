@@ -27,11 +27,6 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
           "h-screen w-1/2 md:w-auto md:h-auto md:flex hidden md:block"
         )}
       >
-        <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
-          <Link href={"#banner"} onClick={handleScroll}>
-            Top
-          </Link>
-        </li>
         {/* <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
           <Link href={"/"}>À propos</Link>
         </li> */}
@@ -56,14 +51,29 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
             "h-screen w-1/2 md:hidden"
           )}
         >
-          <li className="pb-6 text-white py-6 text-center border-b-2 hover:text-gray-300">
-            <Link href={"/"} onClick={handleNavbar}>
-              À propos
+          <li className="pb-6 text-xl text-white py-6 text-center border-b-2 hover:text-gray-300">
+            <Link href={"/wedding"} onClick={handleNavbar}>
+              Mariage
             </Link>
           </li>
           <li className="pb-6 text-xl text-white py-6 text-center border-b-2 hover:text-gray-300">
+            <Link href={"/maternity"} onClick={handleNavbar}>
+              Maternité
+            </Link>
+          </li>
+          <li className="pb-6 text-xl text-white py-6 text-center border-b-2 hover:text-gray-300">
+            <Link href={"/newBorn"} onClick={handleNavbar}>
+              Nouveau Né
+            </Link>
+          </li>
+          <li className="pb-6 text-xl text-white py-6 text-center border-b-2 hover:text-gray-300">
+            <Link href={"/event"} onClick={handleNavbar}>
+              Évènement
+            </Link>
+          </li>
+          <li className="pb-6 text-white py-6 text-center border-b-2 hover:text-gray-300">
             <Link href={"/"} onClick={handleNavbar}>
-              Contact
+              À propos
             </Link>
           </li>
         </ul>
