@@ -1,5 +1,5 @@
 import Banner from "../components/banner/Banner";
-import Main from "../components/main/Main";
+import Main from "./Main";
 import Footer from "../components/footer/Footer";
 import NavBar from "../components/navBar/NavBar";
 

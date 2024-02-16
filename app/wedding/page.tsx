@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import Masonry from "../../components/masonry/Masonry";
 import { categories } from "../../helpers";
 import CategoryCard from "../../components/main/CategoryCard";
+import TopButton from "../../components/topButton/TopButton";
 
 export const metadata = {
   title: "Mariage",
@@ -61,6 +62,7 @@ export default function WeddingPage() {
         </div>
       </div>
       <Footer />
+      <TopButton />
     </>
   );
 }
