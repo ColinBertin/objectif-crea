@@ -28,8 +28,8 @@ export default function Footer() {
           height={50}
         />
       </Link>
-      <div className="flex justify-between">
-        <p className="hidden md:inline-block text-gray-300 my-auto text-sm">
+      <div className="flex justify-between items-end">
+        <p className="hidden md:inline-block text-gray-300 text-sm">
           © Copyright 2012 - 2022 | All Rights Reserved
         </p>
         <ul className="flex text-gray-600">
