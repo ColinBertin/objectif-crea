@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import { categories } from "../../helpers";
 import CategoryCard from "../../components/main/CategoryCard";
 import Masonry from "../../components/masonry/Masonry";
+import TopButton from "../../components/topButton/TopButton";
 
 export const metadata = {
   title: "Nouveau né",
@@ -59,6 +60,7 @@ export default function NewBornPage() {
         </div>
       </div>
       <Footer />
+      <TopButton />
     </>
   );
 }

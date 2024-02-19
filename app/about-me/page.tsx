@@ -2,6 +2,7 @@ import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
 import Footer from "../../components/footer/Footer";
 import Image from "next/image";
+import TopButton from "../../components/topButton/TopButton";
 
 // import ContactForm from "./contact-form";
 
@@ -120,6 +121,7 @@ export default function AboutMePage() {
         </section> */}
       </div>
       <Footer />
+      <TopButton />
     </>
   );
 }
