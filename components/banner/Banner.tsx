@@ -25,7 +25,7 @@ export default function Banner({ bg, title }: banner) {
       }}
     >
       <div className="flex flex-col items-center justify-center h-screen text-white px-10 md:px-16 lg:px-20">
-        {title && (
+        {title && !pathName?.endsWith("/about-me") && (
           <h4 className="mb-10 text-lg sm:text-xl uppercase tracking-widest">
             — Objectif Créa Collection —
           </h4>
