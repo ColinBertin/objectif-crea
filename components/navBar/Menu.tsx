@@ -1,7 +1,6 @@
 "use client";
 import clsx from "clsx";
 import Link from "next/link";
-import { handleScroll } from "../../helpers";
 import { Transition } from "@headlessui/react";
 import { useEffect } from "react";
 
