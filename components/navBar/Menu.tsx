@@ -38,10 +38,10 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
       <Transition
         show={menuState}
         className="w-full flex justify-center items-center"
-        enter="transition ease-in-out duration-300 transform"
+        enter="transition ease-in duration-300 transform"
         enterFrom="-translate-x-full"
         enterTo="translate-x-0"
-        leave="transition ease-in-out duration-300 transform"
+        leave="transition ease-out duration-300 transform"
         leaveFrom="translate-x-0"
         leaveTo="-translate-x-full"
       >

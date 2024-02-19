@@ -37,7 +37,7 @@ export default function Footer() {
             href="https://www.facebook.com/profile.php?id=100077455703233"
             target={"_blank"}
           >
-            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300">
+            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300 transition ease-in-out duration-200 transform">
               <FaFacebookF size={20} />
             </li>
           </Link>
@@ -50,7 +50,7 @@ export default function Footer() {
             href="https://www.instagram.com/objectif_crea"
             target={"_blank"}
           >
-            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300">
+            <li className="mr-2 sm:mr-3 md:mr-4 text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300 transition ease-in-out duration-200 transform">
               <AiFillInstagram size={20} />
             </li>
           </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/objectif-cr%C3%A9a-756144255/"
             target={"_blank"}
           >
-            <li className="text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300">
+            <li className="text-md p-2 md:p-3 rounded bg-gray-700 hover:bg-gray-300 transition ease-in-out duration-200 transform">
               <AiFillLinkedin size={20} />
             </li>
           </Link>
