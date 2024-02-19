@@ -3,7 +3,7 @@ import Banner from "../../components/banner/Banner";
 import Footer from "../../components/footer/Footer";
 import Image from "next/image";
 
-import ContactForm from "./contact-form";
+// import ContactForm from "./contact-form";
 
 export const metadata = {
   title: "À Propos",
@@ -105,7 +105,7 @@ export default function AboutMePage() {
             de leurs visions et objectifs.
           </p>
         </div> */}
-        <section className="bg-gray-500">
+        {/* <section className="bg-gray-500">
           <div className="py-8 lg:pb-16 px-4 mx-auto max-w-screen-md">
             <div className="pt-8 md:pt-20 mb-3">
               <h4 className="uppercase text-white">Contactez-Moi</h4>
@@ -117,7 +117,7 @@ export default function AboutMePage() {
             </p>
             <ContactForm />
           </div>
-        </section>
+        </section> */}
       </div>
       <Footer />
     </>
