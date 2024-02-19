@@ -29,13 +29,12 @@ export default function TopButton() {
   return (
     <Transition
       show={isScrolling}
-      className="w-full flex justify-center items-center"
-      enter="transition ease-in duration-150 transform"
-      enterFrom="-translate-x-full"
-      enterTo="translate-x-0"
-      leave="transition ease-out duration-150 transform"
-      leaveFrom="translate-x-0"
-      leaveTo="-translate-x-full"
+      enter="transition-opacity duration-150"
+      enterFrom="opacity-0"
+      enterTo="opacity-100"
+      leave="transition-opacity duration-150"
+      leaveFrom="opacity-100"
+      leaveTo="opacity-0"
     >
       <Link
         id="topBtn"
