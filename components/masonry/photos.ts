@@ -1,3 +1,5 @@
+"use client"
+
 export type unsplashPhoto = {
   id: string;
   width: number;
@@ -62,9 +64,48 @@ const unsplashPhotos4 = [
   { id: "xKhtkhc9HbQ", width: 1080, height: 1440 },
 ];
 
-const photos = unsplashingPhoto(unsplashPhotos)
-export const photos2 = unsplashingPhoto(unsplashPhotos2)
-export const photos3 = unsplashingPhoto(unsplashPhotos3)
-export const photos4 = unsplashingPhoto(unsplashPhotos4)
+export const mosaicImages = [
+  {
+    src: "/images/photos/wedding/wedding_1.png",
+    alt: "Wedding 1",
+    caption: "Wedding 1",
+    width: 1080, height: 694
+  },
+  {
+    src: "/images/photos/wedding/wedding_2.png",
+    alt: "Wedding 2",
+    caption: "Wedding 2",
+    width: 1080, height: 1620
+  },
+  {
+    src: "/images/photos/wedding/wedding_3.png",
+    alt: "Wedding 3",
+    caption: "Wedding 3",
+    width: 1080, height: 720
+  },
+  {
+    src: "/images/photos/wedding/wedding_4.png",
+    alt: "Wedding 4",
+    caption: "Wedding 4",
+    width: 1080, height: 1440
+  },
+  {
+    src: "/images/photos/wedding/wedding_5.png",
+    alt: "Wedding 5",
+    caption: "Wedding 5",
+    width: 1080, height: 720
+  },
+];
 
+export const lightboxImages = mosaicImages.map(({ src, alt, caption }) => ({
+  src,
+  alt,
+  caption
+}));
+
+const photos = unsplashingPhoto(unsplashPhotos);
+export const photos2 = unsplashingPhoto(unsplashPhotos2);
+export const photos3 = unsplashingPhoto(unsplashPhotos3);
+// export const photos4 = unsplashingPhoto(unsplashPhotos4);
+export const photos4 = mosaicImages;
 export default photos;

@@ -1,6 +1,7 @@
 "use client";
 
 import PhotoAlbum from "react-photo-album";
+import Gallery from "react-photo-album";
 
 import { useState } from "react";
 import NextJsImage from "./NextJsImage";
@@ -60,6 +61,20 @@ export default function Masonry({ category }: MasonryProps) {
             { viewport: "(max-width: 1199px)", size: "calc(100vw - 20px)" },
           ],
         }}
+      />
+
+      <Gallery
+        layout="masonry"
+        columns={(containerWidth: number) => {
+          let columns = 1;
+          if (containerWidth >= 500) columns = 2;
+          if (containerWidth >= 900) columns = 3;
+          return columns;
+        }}
+        onClick={({ index: current }) => handleLightBox(current)}
+        photos={handleCategory(category) as any}
+        spacing={64}
+        renderPhoto={NextJsImage}
       />
 
       <Lightbox
