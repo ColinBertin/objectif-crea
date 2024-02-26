@@ -15,7 +15,7 @@ export default function AboutMePage() {
     <>
       <div>
         <NavBar />
-        <Banner bg="/images/banner/man2.png" title="Adam Krings" />
+        <Banner bg="/images/banner/man4.png" title="Adam Krings" />
       </div>
       <div id="intro" className="text-center">
         <section className="px-10 py-8 lg:px-40 lg:py-20">
