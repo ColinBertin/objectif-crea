@@ -20,8 +20,6 @@ interface LoginResponse {
 export default function ContactForm() {
   const [openDialog, setOpenDialog] = useState(false);
   const [response, setResponse] = useState<LoginResponse>();
-  const [isSending, setIsSending] = useState(false);
-  const [message, setMessage] = useState<string | null>(null);
 
   const {
     register,
@@ -38,30 +36,31 @@ export default function ContactForm() {
   });
 
   const handleSendMail = async (data: FormInput) => {
-    setIsSending(true);
-    setMessage(null);
-
     try {
       const response = await axios.post("/api/sendEmail", data);
 
       if (response.status === 200) {
         setOpenDialog(true);
-        setResponse({ logged: true, message: "Send" });
+        setResponse({
+          logged: true,
+          message: "Votre message a bien été envoyé!",
+        });
         setTimeout(() => {
           setOpenDialog(false);
         }, 5000);
         reset();
       } else {
-        setMessage("Error sending email. Status code: " + response.status);
+        console.log("Error sending email. Status code: " + response.status);
       }
     } catch (error: any) {
       setOpenDialog(true);
-      setResponse({ logged: false, message: "Not send" });
+      setResponse({
+        logged: false,
+        message: "une erreur s'est produite, veuillez réessayer",
+      });
       setTimeout(() => {
         setOpenDialog(false);
       }, 5000);
-    } finally {
-      setIsSending(false);
     }
   };
 
@@ -130,9 +129,10 @@ export default function ContactForm() {
         </button>
       </form>
       {openDialog && (
-        <div className="absolute top-4 right-4">
-          <Alert response={response as LoginResponse} />
-        </div>
+        <Alert
+          response={response as LoginResponse}
+          closeModal={() => setOpenDialog(false)}
+        />
       )}
     </>
   );
