@@ -1,67 +1,107 @@
 "use client";
 
 import { SubmitHandler, useForm } from "react-hook-form";
+import { useState } from "react";
+import axios from "axios";
 
 interface FormInput {
+  name: string;
   email: string;
-  sujet: string;
+  subject: string;
   message: string;
 }
 
 export default function ContactForm() {
-  const onSubmit: SubmitHandler<FormInput> = async (formData) => {
-    console.log(formData);
-  };
+  const [isSending, setIsSending] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
 
   const {
     register,
     handleSubmit,
+    reset,
     // formState: { errors },
   } = useForm<FormInput>({
     defaultValues: {
+      name: "",
       email: "",
-      sujet: "",
+      subject: "",
       message: "",
     },
   });
+
+  const handleSendMail = async (data: FormInput) => {
+    setIsSending(true);
+    setMessage(null);
+
+    try {
+      const response = await axios.post("/api/contact", data);
+
+      if (response.status === 200) {
+        setMessage("Email sent successfully!");
+        reset();
+      } else {
+        setMessage("Error sending email. Status code: " + response.status);
+      }
+    } catch (error: any) {
+      setMessage("Error sending email: " + error.message);
+    } finally {
+      setIsSending(false);
+    }
+  };
+
+  const onSubmit: SubmitHandler<FormInput> = async (formData) => {
+    handleSendMail(formData);
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
       <div className="space-y-8 text-start">
         <div>
           <label className="block mb-2 text-sm font-medium text-white">
-            Vorte Email
+            Nom<span className="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            id="name"
+            className="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            placeholder="Adam Krings"
+            {...register("name", { required: true })}
+          />
+        </div>
+        <div>
+          <label className="block mb-2 text-sm font-medium text-white">
+            Email<span className="text-red-500">*</span>
           </label>
           <input
             type="email"
             id="email"
             className="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
             placeholder="name@example.com"
-            {...(register("email"), { required: true })}
+            {...register("email", { required: true })}
           />
         </div>
         <div>
           <label className="block mb-2 text-sm font-medium text-white">
-            Sujet
+            Sujet<span className="text-red-500">*</span>
           </label>
           <input
             type="text"
             id="subject"
             className="block p-3 w-full text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
             placeholder="Faite-moi savoir comment puis-je vous aider"
-            {...(register("sujet"), { required: true })}
+            {...register("subject", { required: true })}
           />
         </div>
         <div className="sm:col-span-2">
           <label className="block mb-2 text-sm font-medium text-white">
-            Votre message
+            Votre message<span className="text-red-500">*</span>
           </label>
           <textarea
             id="message"
             rows={6}
             className="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
             placeholder="Laissez-moi un message..."
-            {...(register("message"), { required: true })}
+            {...register("message", { required: true })}
           ></textarea>
         </div>
       </div>
