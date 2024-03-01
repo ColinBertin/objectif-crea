@@ -1,13 +1,32 @@
 "use client";
 
+import { SubmitHandler, useForm } from "react-hook-form";
+
+interface FormInput {
+  email: string;
+  sujet: string;
+  message: string;
+}
+
 export default function ContactForm() {
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    console.log("Send Email");
+  const onSubmit: SubmitHandler<FormInput> = async (formData) => {
+    console.log(formData);
   };
 
+  const {
+    register,
+    handleSubmit,
+    // formState: { errors },
+  } = useForm<FormInput>({
+    defaultValues: {
+      email: "",
+      sujet: "",
+      message: "",
+    },
+  });
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-8">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
       <div className="space-y-8 text-start">
         <div>
           <label className="block mb-2 text-sm font-medium text-white">
@@ -18,7 +37,7 @@ export default function ContactForm() {
             id="email"
             className="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
             placeholder="name@example.com"
-            required
+            {...(register("email"), { required: true })}
           />
         </div>
         <div>
@@ -30,7 +49,7 @@ export default function ContactForm() {
             id="subject"
             className="block p-3 w-full text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
             placeholder="Faite-moi savoir comment puis-je vous aider"
-            required
+            {...(register("sujet"), { required: true })}
           />
         </div>
         <div className="sm:col-span-2">
@@ -42,6 +61,7 @@ export default function ContactForm() {
             rows={6}
             className="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
             placeholder="Laissez-moi un message..."
+            {...(register("message"), { required: true })}
           ></textarea>
         </div>
       </div>
