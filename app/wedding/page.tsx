@@ -27,7 +27,7 @@ export default function WeddingPage() {
             Capturer l&apos;Inoubliable : Photographie de Mariage Artistique et
             Emotive
           </h3>
-          <p className="text-base leading-9 tracking-wide text-gray-300">
+          <p className="text-base text-start md:text-center leading-7 tracking-wide text-gray-300">
             Découvrez l&apos;art de capturer les moments magiques de votre
             journée spéciale. En tant que spécialiste de la photographie de
             mariage, je crée des souvenirs intemporels qui racontent votre

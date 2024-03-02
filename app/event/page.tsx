@@ -26,7 +26,7 @@ export default function EventPage() {
           <h3 className="mb-3 text-xl">
             Racontant Votre Histoire : Photographie d&apos;Événement à Bruxelles
           </h3>
-          <p className="text-sm md:text-base lg:text-lg leading-9 tracking-wide text-gray-300">
+          <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
             Chaque événement a une histoire à raconter, des éclats de rire
             partagés aux moments de célébration authentiques. Que ce soit pour
             un anniversaire, une remise de diplôme, ou tout autre événement

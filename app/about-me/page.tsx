@@ -22,7 +22,7 @@ export default function AboutMePage() {
           <h4 className="mb-6 text-white">
             À Propos d&apos;Adam Krings, Photographe
           </h4>
-          <p className="text-base lg:text-lg leading-9 tracking-wide text-gray-300">
+          <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
             Bienvenue sur le portfolio d&apos;Adam Krings, un photographe
             passionné qui a su évoluer avec son art, passant de la chambre noire
             traditionnelle au dynamisme du numérique. Diplômé en arts et
@@ -35,7 +35,7 @@ export default function AboutMePage() {
         <section className="flex justify-center items-center space-y-8 px-10 py-8 lg:px-20 xl:px-40 lg:py-20 flex-wrap">
           <div className="flex flex-col justify-center lg:w-1/2">
             <h4 className="mb-6 text-white">Mon Voyage Photographique</h4>
-            <p className="text-base lg:text-lg leading-7 lg:leading-9 md:p-4 tracking-wide text-gray-300">
+            <p className="text-base text-start lg:text-lg leading-7 lg:leading-9 md:p-4 tracking-wide text-gray-300">
               Mon amour pour la photographie a commencé dans l&apos;intimité
               d&apos;un laboratoire, où j&apos;ai appris à développer mes
               photos, capturant l&apos;essence du moment dans chaque goutte de
@@ -61,7 +61,7 @@ export default function AboutMePage() {
         <section className="flex flex-row-reverse justify-center items-center space-y-8 px-10 py-8 lg:px-20 xl:px-40 lg:py-20 flex-wrap">
           <div className="flex flex-col justify-center md:w-1/2">
             <h4 className="mb-6 text-white">Mon Approche</h4>
-            <p className="text-base lg:text-lg leading-7 lg:leading-9 md:p-4 tracking-wide text-gray-300">
+            <p className="text-base text-start lg:text-lg leading-7 lg:leading-9 md:p-4 tracking-wide text-gray-300">
               Je crois fermement que chaque photographie doit raconter une
               histoire, capturer un instant, une émotion, un fragment de temps
               qui, autrement, serait perdu. Que ce soit à travers les paysages
@@ -111,7 +111,7 @@ export default function AboutMePage() {
             <div className="pt-8 md:pt-20 mb-3">
               <h4 className="uppercase text-white">Contactez-Moi</h4>
             </div>
-            <p className="text-base lg:text-lg leading-9 tracking-wide text-gray-300 mb-6">
+            <p className="text-base text-start md:text-center lg:text-lg tracking-wide text-gray-300 mb-6">
               Pour discuter de votre projet photographique et voir comment nous
               pouvons collaborer pour donner vie à votre vision, n&apos;hésitez
               pas à me contacter.
