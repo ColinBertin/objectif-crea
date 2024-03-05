@@ -27,7 +27,7 @@ export default function MaternityPage() {
             Célébrer le Voyage de la Maternité : Photographie Émotionnelle et
             Authentique
           </h3>
-          <p className="text-sm md:text-base lg:text-lg leading-9 tracking-wide text-gray-300">
+          <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
             Embarquez dans le voyage émotionnel de la maternité avec des
             photographies qui capturent la beauté et la force de cette
             expérience unique. De la grossesse à l&apos;accueil de la nouvelle

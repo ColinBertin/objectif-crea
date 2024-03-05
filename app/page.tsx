@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="relative h-screen w-screen">
       <header className="h-screen w-screen">
         <NavBar />
-        <Banner bg="/images/banner/bannerImg1small.png" />
+        <Banner bg="/images/banner/intro.jpg" />
       </header>
       <main className="h-100">
         <Main />
