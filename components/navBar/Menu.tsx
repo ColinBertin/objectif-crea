@@ -25,6 +25,10 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
 
   const sections = [
     {
+      title: "Home",
+      href: "/",
+    },
+    {
       title: "Mariage",
       href: "/wedding",
     },
