@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Transition } from "@headlessui/react";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { handleScroll } from "../../helpers";
 
 type menuProps = {
   menuState: boolean;
@@ -20,6 +21,34 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
   }, [menuState]);
 
   const pathname = usePathname();
+  const isSamePath = (p: string) => pathname?.endsWith(p);
+
+  const sections = [
+    {
+      title: "Mariage",
+      href: "/wedding",
+    },
+    {
+      title: "Maternité",
+      href: "/maternity",
+    },
+    {
+      title: "Nouveau Né",
+      href: "/newBorn",
+    },
+    {
+      title: "Évènement",
+      href: "/event",
+    },
+    {
+      title: "À propos",
+      href: "/about-me",
+    },
+    // {
+    //   title: "Contact",
+    //   href: "/about-me/#contact-form",
+    // },
+  ];
 
   return (
     <>
@@ -29,7 +58,13 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
           "h-screen w-1/2 md:w-auto md:h-auto md:flex hidden md:block"
         )}
       >
-        {!pathname?.endsWith("/about-me") && (
+        {pathname?.endsWith("/about-me") ? (
+          <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
+            <Link href={"#contact-form"} onClick={handleScroll}>
+              Contact
+            </Link>
+          </li>
+        ) : (
           <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
             <Link href={"/about-me"}>À Propos</Link>
           </li>
@@ -52,31 +87,20 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
             "h-screen w-1/2 md:hidden"
           )}
         >
-          <li className="pb-6 text-xl text-white py-6 text-center border-b-2 hover:text-gray-300">
-            <Link href={"/wedding"} onClick={handleNavbar}>
-              Mariage
-            </Link>
-          </li>
-          <li className="pb-6 text-xl text-white py-6 text-center border-b-2 hover:text-gray-300">
-            <Link href={"/maternity"} onClick={handleNavbar}>
-              Maternité
-            </Link>
-          </li>
-          <li className="pb-6 text-xl text-white py-6 text-center border-b-2 hover:text-gray-300">
-            <Link href={"/newBorn"} onClick={handleNavbar}>
-              Nouveau Né
-            </Link>
-          </li>
-          <li className="pb-6 text-xl text-white py-6 text-center border-b-2 hover:text-gray-300">
-            <Link href={"/event"} onClick={handleNavbar}>
-              Évènement
-            </Link>
-          </li>
-          <li className="pb-6 text-white py-6 text-center border-b-2 hover:text-gray-300">
-            <Link href={"/about-me"} onClick={handleNavbar}>
-              À propos
-            </Link>
-          </li>
+          {sections.map((section) => (
+            <li
+              key={section.title}
+              className={`${
+                isSamePath(section.href)
+                  ? "text-gold-500 border-gold-500"
+                  : "text-white"
+              } pb-6 text-xl py-6 text-center border-b-2 hover:text-gray-300`}
+            >
+              <Link href={section.href} onClick={handleNavbar}>
+                {section.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </Transition>
     </>
