@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import { categories } from "../../helpers";
 import CategoryCard from "../../components/main/CategoryCard";
 import Masonry from "../../components/masonry/Masonry";
+import TopButton from "../../components/topButton/TopButton";
 
 export const metadata = {
   title: "Nouveau né",
@@ -22,21 +23,24 @@ export default function NewBornPage() {
       </div>
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h3 className="mb-3 text-xl">— WE TAKE THE TIME TO —</h3>
-          <p className="text-sm md:text-base leading-9 tracking-wide text-gray-300">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
-            commodi quis esse, qui voluptatum distinctio perspiciatis. Ut
-            quibusdam amet iste sit veniam, minima recusandae incidunt fugiat,
-            voluptatem commodi natus debitis!
+          <h3 className="mb-3 text-xl">
+            Les Premiers Jours : Capturer la Douceur des Nouveaux Nés
+          </h3>
+          <p className="text-base text-start md:text-center leading-9 tracking-wide text-gray-300">
+            Immortalisez la douceur, la pureté et les détails si précieux des
+            premiers jours de votre nouveau-né avec des photographies qui
+            parlent au cœur. Spécialisé dans la photographie de nouveaux nés, je
+            crée un environnement chaleureux et sécurisé pour capturer les
+            expressions uniques et les premiers moments de vie de votre bébé.
           </p>
         </div>
         <div className="px-10 pb-8 md:px-24 md:pb-20">
           <Masonry category={3} />
         </div>
         <div className="bg-gray-500">
-          <div className="pt-8 md:pt-20 mb-3">
-            <h3 className="uppercase text-white tracking-wide">Catégories</h3>
-          </div>
+          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide">
+            Catégories
+          </h3>
           <div
             className={`pt-12 pb-20 md:pb-32 md:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-${
               filteredCategories().length > 3 ? 4 : 3
@@ -56,6 +60,7 @@ export default function NewBornPage() {
         </div>
       </div>
       <Footer />
+      <TopButton />
     </>
   );
 }

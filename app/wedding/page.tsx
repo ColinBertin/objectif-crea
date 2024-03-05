@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import Masonry from "../../components/masonry/Masonry";
 import { categories } from "../../helpers";
 import CategoryCard from "../../components/main/CategoryCard";
+import TopButton from "../../components/topButton/TopButton";
 
 export const metadata = {
   title: "Mariage",
@@ -23,10 +24,10 @@ export default function WeddingPage() {
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
           <h3 className="mb-3 text-xl">
-            — Capturer l&apos;Inoubliable : Photographie de Mariage Artistique
-            et Emotive —
+            Capturer l&apos;Inoubliable : Photographie de Mariage Artistique et
+            Emotive
           </h3>
-          <p className="text-sm md:text-base leading-9 tracking-wide text-gray-300">
+          <p className="text-base text-start md:text-center leading-7 tracking-wide text-gray-300">
             Découvrez l&apos;art de capturer les moments magiques de votre
             journée spéciale. En tant que spécialiste de la photographie de
             mariage, je crée des souvenirs intemporels qui racontent votre
@@ -39,7 +40,9 @@ export default function WeddingPage() {
           <Masonry category={4} />
         </div>
         <div className="bg-gray-500">
-          <h3 className="uppercase text-white tracking-wide">Catégories</h3>
+          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide">
+            Catégories
+          </h3>
           <div
             className={`pt-12 pb-20 md:pb-32 md:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-${
               filteredCategories().length > 3 ? 4 : 3
@@ -59,6 +62,7 @@ export default function WeddingPage() {
         </div>
       </div>
       <Footer />
+      <TopButton />
     </>
   );
 }
