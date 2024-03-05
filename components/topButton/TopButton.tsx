@@ -40,7 +40,7 @@ export default function TopButton() {
         id="topBtn"
         className={`${
           !isScrolling && "hidden"
-        } fixed bottom-28 right-7 z-40 bg-gray-300 text-white cursor-pointer p-2 text-md md:p-2 md:text-2xl rounded-full`}
+        } fixed bottom-28 right-7 z-10 bg-gray-300 text-white cursor-pointer p-2 text-md md:p-2 md:text-2xl rounded-full`}
         href={"#banner"}
         onClick={handleScroll}
       >
