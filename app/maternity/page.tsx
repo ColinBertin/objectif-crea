@@ -36,7 +36,7 @@ export default function MaternityPage() {
           </p>
         </div>
         <div className="px-10 pb-8 md:px-24 md:pb-20">
-          <Masonry category={2} />
+          <Masonry category="maternity" />
         </div>
         <div className="bg-gray-500">
           <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide">

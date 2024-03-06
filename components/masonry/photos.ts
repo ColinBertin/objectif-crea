@@ -37,14 +37,6 @@ const unsplashPhotos = [
   { id: "xKhtkhc9HbQ", width: 1080, height: 1440 },
 ];
 
-const unsplashPhotos2 = [
-  { id: "Jztmx9yqjBw", width: 1080, height: 607 },
-  { id: "-heLWtuAN3c", width: 1080, height: 608 },
-  { id: "xOigCUcFdA8", width: 1080, height: 720 },
-  { id: "1azAjl8FTnU", width: 1080, height: 1549 },
-  { id: "ALrCdq-ui_Q", width: 1080, height: 720 },
-];
-
 const unsplashPhotos3 = [
   { id: "twukN12EN7c", width: 1080, height: 694 },
   { id: "9UjEyzA6pP4", width: 1080, height: 1620 },
@@ -64,12 +56,12 @@ const unsplashPhotos4 = [
   { id: "xKhtkhc9HbQ", width: 1080, height: 1440 },
 ];
 
-export const mosaicImages = [
+export const weddingPhotos = [
   {
     src: "/images/photos/wedding/wedding_1.png",
     alt: "Wedding 1",
     caption: "Wedding 1",
-    width: 1080, height: 694
+    width: 900, height: 900
   },
   {
     src: "/images/photos/wedding/wedding_2.png",
@@ -81,31 +73,67 @@ export const mosaicImages = [
     src: "/images/photos/wedding/wedding_3.png",
     alt: "Wedding 3",
     caption: "Wedding 3",
-    width: 1080, height: 720
+    width: 1024, height: 1024
   },
   {
     src: "/images/photos/wedding/wedding_4.png",
     alt: "Wedding 4",
     caption: "Wedding 4",
-    width: 1080, height: 1440
+    width: 1080, height: 1080
   },
   {
     src: "/images/photos/wedding/wedding_5.png",
     alt: "Wedding 5",
     caption: "Wedding 5",
-    width: 1080, height: 720
+    width: 1080, height: 1080
   },
 ];
 
-export const lightboxImages = mosaicImages.map(({ src, alt, caption }) => ({
+export const maternityPhotos = [
+  {
+    src: "/images/photos/maternity/maternity_1.png",
+    alt: "Maternity 1",
+    caption: "Maternity 1",
+    width: 900, height: 900
+  },
+  {
+    src: "/images/photos/maternity/maternity_2.png",
+    alt: "Maternity 2",
+    caption: "Maternity 2",
+    width: 1080, height: 1620
+  },
+  {
+    src: "/images/photos/maternity/maternity_3.png",
+    alt: "Maternity 3",
+    caption: "Maternity 3",
+    width: 1024, height: 1024
+  },
+  {
+    src: "/images/photos/maternity/maternity_4.png",
+    alt: "Maternity 4",
+    caption: "Maternity 4",
+    width: 1080, height: 1080
+  },
+  {
+    src: "/images/photos/maternity/maternity_5.png",
+    alt: "Maternity 5",
+    caption: "Maternity 5",
+    width: 1080, height: 1080
+  },
+  {
+    src: "/images/photos/maternity/maternity_6.png",
+    alt: "Maternity 6",
+    caption: "Maternity 6",
+    width: 1080, height: 1620
+  },
+];
+
+export const lightboxImages = weddingPhotos.map(({ src, alt, caption }) => ({
   src,
   alt,
   caption
 }));
 
 const photos = unsplashingPhoto(unsplashPhotos);
-export const photos2 = unsplashingPhoto(unsplashPhotos2);
 export const photos3 = unsplashingPhoto(unsplashPhotos3);
-// export const photos4 = unsplashingPhoto(unsplashPhotos4);
-export const photos4 = mosaicImages;
 export default photos;

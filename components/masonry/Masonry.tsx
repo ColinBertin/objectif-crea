@@ -1,11 +1,11 @@
 "use client";
 
-import PhotoAlbum from "react-photo-album";
+// import PhotoAlbum from "react-photo-album";
 import Gallery from "react-photo-album";
 
 import { useState } from "react";
 import NextJsImage from "./NextJsImage";
-import photos, { photos2, photos3, photos4 } from "./photos";
+import photos, { photos3, weddingPhotos, maternityPhotos } from "./photos";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -13,7 +13,7 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 type MasonryProps = {
-  category: number;
+  category: string;
 };
 
 export default function Masonry({ category }: MasonryProps) {
@@ -30,16 +30,16 @@ export default function Masonry({ category }: MasonryProps) {
     setIndex(-1);
   };
 
-  const handleCategory = (cat: number) => {
+  const handleCategory = (cat: string) => {
     switch (cat) {
-      case 1:
+      case "event":
         return photos;
-      case 2:
-        return photos2;
-      case 3:
+      case "maternity":
+        return maternityPhotos;
+      case "newborn":
         return photos3;
-      case 4:
-        return photos4;
+      case "wedding":
+        return weddingPhotos;
       default:
         break;
     }
@@ -47,7 +47,7 @@ export default function Masonry({ category }: MasonryProps) {
 
   return (
     <>
-      <PhotoAlbum
+      {/* <PhotoAlbum
         photos={handleCategory(category) as any}
         layout="rows"
         renderPhoto={NextJsImage}
@@ -61,7 +61,7 @@ export default function Masonry({ category }: MasonryProps) {
             { viewport: "(max-width: 1199px)", size: "calc(100vw - 20px)" },
           ],
         }}
-      />
+      /> */}
 
       <Gallery
         layout="masonry"
@@ -73,7 +73,7 @@ export default function Masonry({ category }: MasonryProps) {
         }}
         onClick={({ index: current }) => handleLightBox(current)}
         photos={handleCategory(category) as any}
-        spacing={64}
+        spacing={32}
         renderPhoto={NextJsImage}
       />
 
