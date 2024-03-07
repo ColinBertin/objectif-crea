@@ -1,4 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
+import Footer from "../components/footer/Footer";
+import NavBar from "../components/navBar/NavBar";
+import TopButton from "../components/topButton/TopButton";
 import "../styles/globals.css";
 
 export async function generateMetadata() {
@@ -29,7 +32,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative">{children}</body>
+      <body className="relative">
+        <NavBar />
+        {children}
+        <Footer />
+        <TopButton />
+      </body>
       <Analytics />
     </html>
   );

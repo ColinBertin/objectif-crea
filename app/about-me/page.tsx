@@ -1,8 +1,5 @@
-import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
-import Footer from "../../components/footer/Footer";
 import Image from "next/image";
-import TopButton from "../../components/topButton/TopButton";
 
 import ContactForm from "./contact-form";
 
@@ -13,10 +10,7 @@ export const metadata = {
 export default function AboutMePage() {
   return (
     <>
-      <div>
-        <NavBar />
-        <Banner bg="/images/banner/man4.png" title="Adam Krings" />
-      </div>
+      <Banner bg="/images/banner/man4.png" title="Adam Krings" />
       <div id="intro" className="text-center">
         <section className="px-10 py-8 lg:px-40 lg:py-20">
           <h4 className="mb-6 text-white">
@@ -120,8 +114,6 @@ export default function AboutMePage() {
           </div>
         </section>
       </div>
-      <Footer />
-      <TopButton />
     </>
   );
 }
