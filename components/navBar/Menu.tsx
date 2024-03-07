@@ -58,7 +58,7 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
         menuState
           ? "h-screen w-screen fixed md:h-auto md:w-64 md:top-10 md:right-5"
           : "hidden",
-        "flex flex-col justify-center px-20 md:px-10 md:pt-5 md:pb-10 bg-gray-800 md:mt-8 z-40"
+        "flex flex-col justify-center -pt-20 px-20 md:px-10 md:pt-5 md:pb-10 bg-gray-800 md:mt-8 z-40"
       )}
     >
       {sections.map((section) => (
