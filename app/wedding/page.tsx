@@ -1,10 +1,7 @@
-import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
-import Footer from "../../components/footer/Footer";
 import Masonry from "../../components/masonry/Masonry";
 import { categories } from "../../helpers";
 import CategoryCard from "../../components/main/CategoryCard";
-import TopButton from "../../components/topButton/TopButton";
 
 export const metadata = {
   title: "Mariage",
@@ -17,10 +14,7 @@ export default function WeddingPage() {
 
   return (
     <>
-      <div>
-        <NavBar />
-        <Banner bg="/images/banner/mariageBig.png" title="Mariage" />
-      </div>
+      <Banner bg="/images/banner/mariageBig.png" title="Mariage" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
           <h3 className="mb-3 text-xl">
@@ -61,8 +55,6 @@ export default function WeddingPage() {
           </div>
         </div>
       </div>
-      <Footer />
-      <TopButton />
     </>
   );
 }

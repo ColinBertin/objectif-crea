@@ -1,10 +1,7 @@
-import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
-import Footer from "../../components/footer/Footer";
 import { categories } from "../../helpers";
 import CategoryCard from "../../components/main/CategoryCard";
 import Masonry from "../../components/masonry/Masonry";
-import TopButton from "../../components/topButton/TopButton";
 
 export const metadata = {
   title: "Évènement",
@@ -17,10 +14,7 @@ export default function EventPage() {
 
   return (
     <>
-      <div>
-        <NavBar />
-        <Banner bg="/images/banner/evenementSmall.png" title="Évènement" />
-      </div>
+      <Banner bg="/images/banner/evenementSmall.png" title="Évènement" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
           <h3 className="mb-3 text-xl">
@@ -60,8 +54,6 @@ export default function EventPage() {
           </div>
         </div>
       </div>
-      <Footer />
-      <TopButton />
     </>
   );
 }
