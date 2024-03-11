@@ -17,7 +17,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="w-full fixed top-0 left-0 z-30 bg-gray-800 flex justify-between px-6 py-2 z-50">
+      <nav className="w-full fixed top-0 left-0 bg-gray-800 flex justify-between px-6 py-2 z-50">
         {/* LOGO */}
         <Link className="inline" href={"/"}>
           <Image
