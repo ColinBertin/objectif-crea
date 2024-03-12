@@ -9,7 +9,7 @@ export default function HomePage() {
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20">
           <h3 className="text-white mb-6 text-2xl md:text-3xl tracking-wider">
-            We take time to
+            Donner vie à vos visions créatives avec Objectif CréA
           </h3>
           <p className="text-base text-start md:text-center md:text-lg leading-7 tracking-wide text-gray-300">
             Chez Objectif CréA, transformer vos visions en chefs-d&apos;œuvre
