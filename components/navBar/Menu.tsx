@@ -58,10 +58,10 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
         menuState
           ? "h-screen w-screen fixed md:h-auto md:w-64 md:top-10 md:right-5"
           : "hidden",
-        "border-2 border-red-500 flex flex-col justify-center px-20 md:px-10 md:pt-5 md:pb-10 bg-gray-800 md:mt-8 z-40"
+        "flex flex-col justify-center px-20 md:px-10 md:pt-5 md:pb-10 bg-gray-800 md:mt-8 z-40 md:shadow-[0_4px_50px_5px_rgba(100,100,100,0.1)]"
       )}
     >
-      <ul className={clsx(menuState && "-mt-16")}>
+      <ul className={clsx(menuState && "-mt-16 md:mt-0")}>
         {sections.map((section) => (
           <li
             key={section.title}
