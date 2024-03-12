@@ -7,9 +7,11 @@ export default function HomePage() {
     <>
       <Banner bg="/images/banner/intro.jpg" />
       <div id="intro" className="text-center">
-        <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h3 className="mb-3 text-xl">WE TAKE THE TIME TO</h3>
-          <p className="text-lg text-start md:text-center md:text-xl leading-7 tracking-wide text-gray-300">
+        <div className="px-10 py-8 lg:px-40 lg:py-20">
+          <h3 className="text-white mb-6 text-2xl md:text-3xl tracking-wider">
+            We take time to
+          </h3>
+          <p className="text-base text-start md:text-center md:text-lg leading-7 tracking-wide text-gray-300">
             Chez Objectif CréA, transformer vos visions en chefs-d&apos;œuvre
             est l&apos;essence même de notre passion. Notre mission est de
             donner vie à vos projets créatifs, en alliant excellence et

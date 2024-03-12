@@ -13,10 +13,10 @@ export default function AboutMePage() {
       <Banner bg="/images/banner/man4.png" title="Adam Krings" />
       <div id="intro" className="text-center">
         <section className="px-10 py-8 lg:px-40 lg:py-20">
-          <h4 className="mb-6 text-white">
+          <h3 className="mb-6 text-white text-2xl md:text-3xl tracking-wider">
             À Propos d&apos;Adam Krings, Photographe
-          </h4>
-          <p className="text-lg text-start md:text-center md:text-xl leading-7 tracking-wide text-gray-300">
+          </h3>
+          <p className="text-base text-start md:text-center md:text-lg leading-7 tracking-wide text-gray-300">
             Bienvenue sur le portfolio d&apos;Adam Krings, un photographe
             passionné qui a su évoluer avec son art, passant de la chambre noire
             traditionnelle au dynamisme du numérique. Diplômé en arts et
@@ -28,8 +28,10 @@ export default function AboutMePage() {
         </section>
         <section className="flex justify-center items-center space-y-8 px-10 py-8 lg:px-20 xl:px-40 lg:py-20 flex-wrap">
           <div className="flex flex-col justify-center lg:w-1/2">
-            <h4 className="mb-6 text-white">Mon Voyage Photographique</h4>
-            <p className="text-lg text-start md:text-xl leading-7 lg:leading-9 md:p-4 tracking-wide text-gray-300">
+            <h3 className="mb-6 text-white text-2xl md:text-3xl tracking-wider">
+              Mon Voyage Photographique
+            </h3>
+            <p className="text-base text-start md:text-lg leading-7 lg:leading-9 md:p-6 tracking-wide text-gray-300">
               Mon amour pour la photographie a commencé dans l&apos;intimité
               d&apos;un laboratoire, où j&apos;ai appris à développer mes
               photos, capturant l&apos;essence du moment dans chaque goutte de
@@ -54,8 +56,10 @@ export default function AboutMePage() {
         </section>
         <section className="flex flex-row-reverse justify-center items-center space-y-8 px-10 py-8 lg:px-20 xl:px-40 lg:py-20 flex-wrap">
           <div className="flex flex-col justify-center md:w-1/2">
-            <h4 className="mb-6 text-white">Mon Approche</h4>
-            <p className="text-lg text-start md:text-xl leading-7 lg:leading-9 md:p-4 tracking-wide text-gray-300">
+            <h3 className="mb-6 text-white text-2xl md:text-3xl tracking-wider">
+              Mon Approche
+            </h3>
+            <p className="text-base text-start md:text-lg leading-7 lg:leading-9 md:p-6 tracking-wide text-gray-300">
               Je crois fermement que chaque photographie doit raconter une
               histoire, capturer un instant, une émotion, un fragment de temps
               qui, autrement, serait perdu. Que ce soit à travers les paysages
@@ -75,12 +79,12 @@ export default function AboutMePage() {
           </div>
         </section>
         {/* <div className="flex flex-col px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h4 className="mb-6">Mes Services</h4>
-          <p className="text-lg md:text-xl leading-9 tracking-wide text-gray-300">
+          <h3 className="mb-6">Mes Services</h3>
+          <p className="text-base md:text-lg leading-9 tracking-wide text-gray-300">
             Je propose une gamme de services photographiques, incluant mais non
             limitée à :
           </p>
-          <ul className="text-lg md:text-xl leading-9 tracking-wide text-gray-300 py-2">
+          <ul className="text-base md:text-lg leading-9 tracking-wide text-gray-300 py-2">
             <li className="hover:text-white underline cursor-pointer">
               Mariage
             </li>
@@ -94,7 +98,7 @@ export default function AboutMePage() {
               Évènement
             </li>
           </ul>
-          <p className="text-lg md:text-xl leading-9 tracking-wide text-gray-300">
+          <p className="text-base md:text-lg leading-9 tracking-wide text-gray-300">
             Chaque projet est une nouvelle aventure, et je m&apos;engage à
             travailler étroitement avec mes clients pour capturer l&apos;essence
             de leurs visions et objectifs.
@@ -103,9 +107,11 @@ export default function AboutMePage() {
         <section id="contact-form" className="bg-gray-500">
           <div className="py-8 lg:pb-16 px-4 mx-auto max-w-screen-md">
             <div className="pt-8 md:pt-20 mb-3">
-              <h4 className="uppercase text-white">Contactez-Moi</h4>
+              <h3 className="text-white text-2xl md:text-3xl tracking-wider">
+                Contactez-Moi
+              </h3>
             </div>
-            <p className="text-lg text-start md:text-center md:text-xl tracking-wide text-gray-300 mb-6">
+            <p className="text-base text-start md:text-center md:text-lg tracking-wide text-gray-300 mb-6">
               Pour discuter de votre projet photographique et voir comment nous
               pouvons collaborer pour donner vie à votre vision, n&apos;hésitez
               pas à me contacter.
