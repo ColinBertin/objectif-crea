@@ -26,14 +26,14 @@ export default function Banner({ bg, title }: banner) {
     >
       <div className="flex flex-col items-center justify-center h-screen text-white px-10 md:px-16 lg:px-20">
         {title && !pathName?.endsWith("/about-me") && (
-          <h4 className="mb-10 text-lg sm:text-xl uppercase tracking-widest">
+          <h4 className="mb-10 text-lg sm:text-xl uppercase tracking-wider">
             — Objectif Créa Collection —
           </h4>
         )}
         <h1
           className={`text-center ${
             pathName?.endsWith("/") ? "text-2xl lg:text-3xl" : "text-4xl"
-          } tracking-widest mb-10 uppercase`}
+          } tracking-wider mb-10 uppercase`}
         >
           {title
             ? `${title}`

@@ -25,7 +25,7 @@ export default function CategoryCard({ title, link, bg }: categoryCard) {
           />
         </div>
         <div className="flex flex-row py-5 bg-gray-800">
-          <h5 className="m-auto text-lg md:text-xl">{title}</h5>
+          <h5 className="m-auto text-xl tracking-widest uppercase">{title}</h5>
         </div>
       </Link>
     </div>

@@ -65,12 +65,14 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
         {pathname?.endsWith("/about-me") ? (
           <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
             <Link href={"#contact-form"} onClick={handleScroll}>
-              Contact
+              <h5 className="uppercase text-xl tracking-widest">Contact</h5>
             </Link>
           </li>
         ) : (
           <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
-            <Link href={"/about-me"}>À Propos</Link>
+            <Link href={"/about-me"}>
+              <h5 className="uppercase text-xl tracking-widest">À Propos</h5>
+            </Link>
           </li>
         )}
       </ul>
@@ -101,7 +103,12 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
               } pb-6 text-xl py-6 text-center border-b-2 hover:text-gray-300`}
             >
               <Link href={section.href} onClick={handleNavbar}>
-                {section.title}
+                <h5
+                  key={section.title}
+                  className="uppercase text-xl tracking-widest"
+                >
+                  {section.title}
+                </h5>
               </Link>
             </li>
           ))}
