@@ -56,9 +56,9 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
     <div
       className={clsx(
         menuState
-          ? "h-screen w-screen fixed md:h-auto md:w-64 md:top-10 md:right-5"
+          ? "fixed md:top-10 md:right-5 h-screen w-screen md:w-52 md:h-auto"
           : "hidden",
-        "flex flex-col justify-center px-20 md:px-8 bg-gray-800 md:mt-8 md:pt-2 md:pb-6 z-40 md:shadow-[0_4px_50px_5px_rgba(100,100,100,0.1)] md:rounded"
+        "flex flex-col justify-center px-20 md:px-6 md:pt-2 md:pb-6 bg-gray-800 md:mt-8 z-40 md:shadow-[0_4px_50px_5px_rgba(100,100,100,0.1)] md:rounded"
       )}
     >
       <ul
