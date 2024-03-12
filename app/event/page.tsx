@@ -17,10 +17,10 @@ export default function EventPage() {
       <Banner bg="/images/banner/evenementSmall.png" title="Évènement" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h3 className="mb-3 text-xl">
+          <h4 className="mb-3 text-white">
             Racontant Votre Histoire : Photographie d&apos;Événement à Bruxelles
-          </h3>
-          <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
+          </h4>
+          <p className="text-lg text-start md:text-center md:text-xl leading-7 tracking-wide text-gray-300">
             Chaque événement a une histoire à raconter, des éclats de rire
             partagés aux moments de célébration authentiques. Que ce soit pour
             un anniversaire, une remise de diplôme, ou tout autre événement
@@ -33,9 +33,9 @@ export default function EventPage() {
           <Masonry category={1} />
         </div>
         <div className="bg-gray-500">
-          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide">
+          <h4 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide">
             Catégories
-          </h3>
+          </h4>
           <div
             className={`pt-12 pb-20 md:pb-32 md:px-24 xl:px-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-${
               filteredCategories().length > 3 ? 4 : 3
