@@ -43,7 +43,6 @@ export default function NavBar() {
       {/* MENU ITEMS */}
       <Transition
         show={navbar}
-        // className="w-full flex justify-center items-center"
         enter="transition ease-out duration-100"
         enterFrom="transform opacity-0 scale-95"
         enterTo="transform opacity-100 scale-100"

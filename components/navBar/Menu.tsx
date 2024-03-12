@@ -10,13 +10,13 @@ type menuProps = {
 };
 
 export default function Menu({ menuState, handleNavbar }: menuProps) {
-  // useEffect(() => {
-  //   if (menuState) {
-  //     document.body.classList.add("overflow-y-hidden");
-  //   } else {
-  //     document.body.classList.remove("overflow-y-hidden");
-  //   }
-  // }, [menuState]);
+  useEffect(() => {
+    if (menuState) {
+      document.body.classList.add("overflow-y-hidden", "md:overflow-y-auto");
+    } else {
+      document.body.classList.remove("overflow-y-hidden", "md:overflow-y-auto");
+    }
+  }, [menuState]);
 
   const pathname = usePathname();
   const isSamePath = (p: string) => pathname?.endsWith(p);
@@ -53,28 +53,30 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
   ];
 
   return (
-    <ul
+    <div
       className={clsx(
         menuState
           ? "h-screen w-screen fixed md:h-auto md:w-64 md:top-10 md:right-5"
           : "hidden",
-        "flex flex-col justify-center -pt-20 px-20 md:px-10 md:pt-5 md:pb-10 bg-gray-800 md:mt-8 z-40"
+        "border-2 border-red-500 flex flex-col justify-center px-20 md:px-10 md:pt-5 md:pb-10 bg-gray-800 md:mt-8 z-40"
       )}
     >
-      {sections.map((section) => (
-        <li
-          key={section.title}
-          className={`${
-            isSamePath(section.href)
-              ? "text-gold-500 border-gold-500"
-              : "text-white border-white hover:text-gray-200 hover:border-gray-200"
-          } text-xl md:text-base py-5 md:py-3 text-center border-b-2`}
-        >
-          <Link href={section.href} onClick={handleNavbar}>
-            {section.title}
-          </Link>
-        </li>
-      ))}
-    </ul>
+      <ul className={clsx(menuState && "-mt-16")}>
+        {sections.map((section) => (
+          <li
+            key={section.title}
+            className={`${
+              isSamePath(section.href)
+                ? "text-gold-500 border-gold-500"
+                : "text-white border-white hover:text-gray-200 hover:border-gray-200"
+            } text-xl md:text-base py-5 md:py-3 text-center border-b-2`}
+          >
+            <Link href={section.href} onClick={handleNavbar}>
+              {section.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
