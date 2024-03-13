@@ -3,13 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Agency";
-  src: url("/fonts/AGENCYR.TTF");
+  font-family: "Calibri";
+  src: url("/fonts/Calibri.ttf");
 }
 
 @font-face {
-  font-family: "Calibri";
-  src: url("/fonts/Calibri.ttf");
+  font-family: "Piraka";
+  src: url("/fonts/piraka-regular.otf");
+}
+
+@font-face {
+  font-family: "One-Crayon";
+  src: url("/fonts/one-crayon-regular.ttf");
+}
+
+@font-face {
+  font-family: "Winter-Candle";
+  src: url("/fonts/winter-candle-regular.ttf");
 }
 
 * {
@@ -19,8 +29,9 @@
 h1,
 h2,
 h3,
-h4 {
-  font-family: "Agency", sans-serif;
+h4,
+h5 {
+  font-family: "One-Crayon", sans-serif;
 }
 
 body {

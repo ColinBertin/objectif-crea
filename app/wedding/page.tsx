@@ -17,11 +17,11 @@ export default function WeddingPage() {
       <Banner bg="/images/banner/mariageBig.png" title="Mariage" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h3 className="mb-3 text-xl">
+          <h3 className="mb-6 text-white text-2xl md:text-3xl tracking-wider">
             Capturer l&apos;Inoubliable : Photographie de Mariage Artistique et
             Emotive
           </h3>
-          <p className="text-base text-start md:text-center leading-7 tracking-wide text-gray-300">
+          <p className="text-base text-start md:text-center md:text-lg leading-7 tracking-wide text-gray-300">
             Découvrez l&apos;art de capturer les moments magiques de votre
             journée spéciale. En tant que spécialiste de la photographie de
             mariage, je crée des souvenirs intemporels qui racontent votre
@@ -34,7 +34,7 @@ export default function WeddingPage() {
           <Masonry category={4} />
         </div>
         <div className="bg-gray-500">
-          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide">
+          <h3 className="pt-8 md:pt-20 mb-3 text-white tracking-wide text-2xl md:text-3xl tracking-wider">
             Catégories
           </h3>
           <div

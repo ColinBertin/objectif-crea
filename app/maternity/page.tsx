@@ -17,11 +17,11 @@ export default function MaternityPage() {
       <Banner bg="/images/banner/materniteSmall.jpg" title="Maternité" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h3 className="mb-3 text-xl">
+          <h3 className="mb-6 text-white text-2xl md:text-3xl tracking-wider">
             Célébrer le Voyage de la Maternité : Photographie Émotionnelle et
             Authentique
           </h3>
-          <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
+          <p className="text-base text-start md:text-center md:text-lg leading-7 tracking-wide text-gray-300">
             Embarquez dans le voyage émotionnel de la maternité avec des
             photographies qui capturent la beauté et la force de cette
             expérience unique. De la grossesse à l&apos;accueil de la nouvelle
@@ -33,7 +33,7 @@ export default function MaternityPage() {
           <Masonry category={2} />
         </div>
         <div className="bg-gray-500">
-          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide">
+          <h3 className="pt-8 md:pt-20 mb-3 text-white tracking-wide text-2xl md:text-3xl tracking-wider">
             Catégories
           </h3>
           <div

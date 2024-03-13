@@ -14,17 +14,19 @@ export default function NotFound() {
       }}
     >
       <div className="mx-auto max-w-7xl px-6 py-32 text-center sm:py-40 lg:px-8">
-        <p className="text-2xl font-semibold leading-8 text-white">404</p>
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">
+        <p className="text-2xl md:text-4xl font-semibold leading-8 text-white">
+          404
+        </p>
+        <h1 className="mt-4 text-2xl font-bold tracking-tight text-white md:text-4xl">
           Page not found
         </h1>
-        <p className="mt-4 text-base lg:text-lg text-white/70 sm:mt-6">
+        <p className="mt-4 text-lg md:text-xl text-white/70 sm:mt-6">
           Sorry, we couldn’t find the page you’re looking for.
         </p>
-        <div className="mt-10 flex justify-center">
+        <div className="mt-10 flex justify-center hover:cursor-pointer">
           <Link
             href="/"
-            className="text-sm font-semibold leading-7 text-white hover:text-lg ease-in duration-200"
+            className="text-lg font-semibold leading-7 text-white hover:text-xl ease-in duration-200"
           >
             <span aria-hidden="true">&larr;</span> Back to home
           </Link>
