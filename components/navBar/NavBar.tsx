@@ -28,7 +28,7 @@ export default function NavBar() {
             height={40}
           />
         </Link>
-        {/* HAMBURGER BUTTON FOR MOBILE */}
+        {/* HAMBURGER BUTTON */}
         <button
           className="text-white rounded-md outline-none"
           onClick={handleNavbar}
