@@ -12,9 +12,11 @@ type menuProps = {
 export default function Menu({ menuState, handleNavbar }: menuProps) {
   useEffect(() => {
     if (menuState) {
-      document.body.classList.add("overflow-y-hidden", "md:overflow-y-auto");
+      // document.body.classList.add("overflow-y-hidden", "md:overflow-y-auto");
+      document.body.classList.add("overflow-y-hidden");
     } else {
-      document.body.classList.remove("overflow-y-hidden", "md:overflow-y-auto");
+      // document.body.classList.remove("overflow-y-hidden", "md:overflow-y-auto");
+      document.body.classList.remove("overflow-y-hidden");
     }
   }, [menuState]);
 
