@@ -24,10 +24,10 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
 
     if (menuState) {
       document.addEventListener("click", handleClickOutside);
-      document.body.classList.add("overflow-y-hidden");
+      document.body.classList.add("overflow-y-hidden", "md:overflow-y-auto");
     } else {
       document.removeEventListener("click", handleClickOutside);
-      document.body.classList.remove("overflow-y-hidden");
+      document.body.classList.remove("overflow-y-hidden", "md:overflow-y-auto");
     }
 
     return () => {
