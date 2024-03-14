@@ -15,7 +15,7 @@ export default function Banner({ bg, title }: banner) {
   return (
     <div
       id="banner"
-      className="w-screen h-screen"
+      className="h-screen"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url(${bg})`,
         backgroundRepeat: "no-repeat",
