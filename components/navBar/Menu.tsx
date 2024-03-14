@@ -63,10 +63,10 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
       title: "À propos",
       href: "/about-me",
     },
-    // {
-    //   title: "Contact",
-    //   href: "/about-me/#contact-form",
-    // },
+    {
+      title: "Contact",
+      href: "/about-me/#contact-form",
+    },
   ];
 
   return (
