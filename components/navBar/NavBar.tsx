@@ -30,7 +30,7 @@ export default function NavBar() {
         </Link>
         {/* HAMBURGER BUTTON */}
         <button
-          className="text-white rounded-md outline-none"
+          className="text-white rounded-md outline-none hover:text-gold-500 transition ease-in duration-100"
           onClick={handleNavbar}
         >
           {navbar ? (

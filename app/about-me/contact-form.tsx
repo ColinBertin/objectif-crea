@@ -115,7 +115,7 @@ export default function ContactForm() {
             <textarea
               id="message"
               rows={6}
-              className="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              className="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700"
               placeholder="Laissez-moi un message..."
               {...register("message", { required: true })}
             ></textarea>
@@ -123,7 +123,7 @@ export default function ContactForm() {
         </div>
         <button
           type="submit"
-          className="py-3 px-5 text-sm font-medium text-center text-white transition ease-in-out duration-200 transform rounded-lg bg-gray-200 sm:w-fit hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+          className="py-3 px-5 text-sm font-medium text-center text-white transition ease-in-out duration-200 transform rounded-lg bg-gray-300 sm:w-fit hover:bg-gold-500 focus:ring-4 focus:outline-none focus:ring-primary-300"
         >
           Envoyer
         </button>
