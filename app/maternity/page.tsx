@@ -17,7 +17,7 @@ export default function MaternityPage() {
       <Banner bg="/images/banner/materniteSmall.jpg" title="Maternité" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h3 className="mb-3 text-xl">
+          <h3 className="mb-3 text-xl lg:text-2xl">
             Célébrer le Voyage de la Maternité : Photographie Émotionnelle et
             Authentique
           </h3>
@@ -33,7 +33,7 @@ export default function MaternityPage() {
           <Masonry category={2} />
         </div>
         <div className="bg-gray-500">
-          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide">
+          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide text-xl lg:text-2xl">
             Catégories
           </h3>
           <div
