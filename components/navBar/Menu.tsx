@@ -1,7 +1,7 @@
 "use client";
 import clsx from "clsx";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 type menuProps = {
@@ -10,15 +10,30 @@ type menuProps = {
 };
 
 export default function Menu({ menuState, handleNavbar }: menuProps) {
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        handleNavbar?.();
+      }
+    };
+
     if (menuState) {
-      // document.body.classList.add("overflow-y-hidden", "md:overflow-y-auto");
+      document.addEventListener("click", handleClickOutside);
       document.body.classList.add("overflow-y-hidden");
     } else {
-      // document.body.classList.remove("overflow-y-hidden", "md:overflow-y-auto");
+      document.removeEventListener("click", handleClickOutside);
       document.body.classList.remove("overflow-y-hidden");
     }
-  }, [menuState]);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [menuState, handleNavbar]);
 
   const pathname = usePathname();
   const isSamePath = (p: string) => pathname?.endsWith(p);
@@ -56,6 +71,7 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
 
   return (
     <div
+      ref={dropdownRef}
       className={clsx(
         menuState
           ? "fixed md:top-10 md:right-5 h-screen w-screen md:w-52 md:h-auto"
