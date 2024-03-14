@@ -73,7 +73,7 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
         <div className="space-y-8 text-start">
           <div>
-            <label className="block mb-2 text-sm font-medium text-white">
+            <label className="block mb-2 text-base font-medium text-white">
               Nom<span className="text-red-500">*</span>
             </label>
             <input
@@ -85,7 +85,7 @@ export default function ContactForm() {
             />
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium text-white">
+            <label className="block mb-2 text-base font-medium text-white">
               Email<span className="text-red-500">*</span>
             </label>
             <input
@@ -97,7 +97,7 @@ export default function ContactForm() {
             />
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium text-white">
+            <label className="block mb-2 text-base font-medium text-white">
               Sujet<span className="text-red-500">*</span>
             </label>
             <input
@@ -109,16 +109,17 @@ export default function ContactForm() {
             />
           </div>
           <div className="sm:col-span-2">
-            <label className="block mb-2 text-sm font-medium text-white">
+            <label className="block mb-2 text-base font-medium text-white">
               Votre message<span className="text-red-500">*</span>
             </label>
             <textarea
               id="message"
               rows={6}
-              className="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700"
+              cols={40}
+              className="block p-2.5 w-full text-sm bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               placeholder="Laissez-moi un message..."
               {...register("message", { required: true })}
-            ></textarea>
+            />
           </div>
         </div>
         <button
