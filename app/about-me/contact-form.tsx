@@ -104,7 +104,7 @@ export default function ContactForm() {
               type="text"
               id="subject"
               className="block p-3 w-full text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-300 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              placeholder="Faite-moi savoir comment puis-je vous aider"
+              placeholder="Faites-moi savoir comment je peux vous aider"
               {...register("subject", { required: true })}
             />
           </div>
