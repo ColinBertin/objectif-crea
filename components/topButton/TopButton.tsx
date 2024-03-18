@@ -26,6 +26,7 @@ export default function TopButton() {
       }
     };
   }, []);
+
   return (
     <Transition
       show={isScrolling}
