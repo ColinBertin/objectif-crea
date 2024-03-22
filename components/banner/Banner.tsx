@@ -19,9 +19,12 @@ export default function Banner({ bg, title }: banner) {
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url(${bg})`,
         backgroundRepeat: "no-repeat",
-        // backgroundSize: "cover",
+        backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
+        WebkitBackgroundSize: "cover",
+        MozBackgroundSize: "cover",
+        OBackgroundSize: "cover",
       }}
     >
       <div className="flex flex-col items-center justify-center h-screen text-white px-10 md:px-16 lg:px-20">
