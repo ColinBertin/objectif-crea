@@ -19,7 +19,7 @@ export default function Banner({ bg, title }: banner) {
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url(${bg})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        // backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
       }}
