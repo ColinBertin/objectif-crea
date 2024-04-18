@@ -32,7 +32,7 @@ export default function Footer() {
 
   return (
     <footer className="flex justify-between items-center flex-wrap md:block bg-gray-800 px-6 sm:px-12 py-6">
-      <Link href={"/"}>
+      <Link className="cursor-pointer" href={"/"}>
         <Image
           src="/images/logos/logoW.png"
           alt="logo"
@@ -51,7 +51,7 @@ export default function Footer() {
               <li
                 className={clsx(
                   i !== platforms.length - 1 && "mr-2 sm:mr-3 md:mr-4",
-                  "text-md p-2 md:p-3 rounded bg-gray-300 hover:bg-gold-500 transition ease-in-out duration-200 transform"
+                  "text-md p-2 md:p-3 rounded bg-gray-300 hover:bg-gold-500 transition ease-in-out duration-200 transform cursor-pointer"
                 )}
               >
                 {platform.icon}

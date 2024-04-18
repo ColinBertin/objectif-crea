@@ -92,7 +92,7 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
                 isSamePath(section.href)
                   ? "text-gold-500 border-gold-500"
                   : "text-white border-white md:border-gray-200"
-              } text-xl md:text-base py-5 md:py-3 border-b-2 md:border-b hover:text-gold-500 hover:border-gold-500`}
+              } text-xl md:text-base py-5 md:py-3 border-b-2 md:border-b hover:text-gold-500 hover:border-gold-500 cursor-pointer`}
             >
               {section.title}
             </li>
