@@ -96,7 +96,6 @@ export async function generateMetadata() {
     alternates: {
       canonical: "https://www.objectifcrea.be",
     },
-    googleSiteVerification: "UsdoRjkOKV3xWXYt7a6EDznGGJv_JImb8Q4yhCNJdgs",
   };
 }
 
@@ -108,6 +107,10 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
+        <meta
+          name="google-site-verification"
+          content="UsdoRjkOKV3xWXYt7a6EDznGGJv_JImb8Q4yhCNJdgs"
+        />
         <Script
           id="faq-schema"
           type="application/ld+json"
