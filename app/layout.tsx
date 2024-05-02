@@ -25,6 +25,9 @@ export async function generateMetadata() {
         },
       ],
     },
+    alternates: {
+      canonical: "https://www.objectifcrea.be",
+    },
   };
 }
 
