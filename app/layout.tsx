@@ -96,6 +96,7 @@ export async function generateMetadata() {
     alternates: {
       canonical: "https://www.objectifcrea.be",
     },
+    googleSiteVerification: "UsdoRjkOKV3xWXYt7a6EDznGGJv_JImb8Q4yhCNJdgs",
   };
 }
 
