@@ -11,6 +11,8 @@ export async function generateMetadata() {
       default: "Objectif Créa",
       template: `%s | Objectif Créa`,
     },
+    description:
+      "Découvrez des photographies époustouflantes de portraits, de mariages, de nouveau-nés, de maternité, d'événements et de bébés par Adam Kring. Explorez notre portfolio et réservez votre séance dès aujourd'hui. Basé en Belgique et desservant Bruxelles.",
     icons: {
       icon: [
         {
@@ -32,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className="relative">
         <NavBar />
         <ContactButton />
