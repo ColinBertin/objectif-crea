@@ -12,7 +12,7 @@ export async function generateMetadata() {
       template: `%s | Objectif Créa`,
     },
     description:
-      "écouvrez des photos époustouflantes par Adam Kring : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez dès aujourd'hui en Belgique, desservant Bruxelles.",
+      "Photos époustouflantes par Adam Kring : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez en Belgique, desservant Bruxelles.",
     icons: {
       icon: [
         {
@@ -28,7 +28,7 @@ export async function generateMetadata() {
     openGraph: {
       title: "Objectif Créa",
       description:
-        "Découvrez des photos époustouflantes par Adam Kring : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez dès aujourd'hui en Belgique, desservant Bruxelles.",
+        "Photos époustouflantes par Adam Kring : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez en Belgique, desservant Bruxelles.",
       url: "https://www.objectifcrea.be",
       siteName: "Objectif Créa",
       images: [
