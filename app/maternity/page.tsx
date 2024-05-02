@@ -17,10 +17,10 @@ export default function MaternityPage() {
       <Banner bg="/images/banner/materniteSmall.jpg" title="Maternité" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h3 className="mb-3 text-xl lg:text-2xl">
+          <h2 className="mb-3 text-xl lg:text-2xl">
             Célébrer le Voyage de la Maternité : Photographie Émotionnelle et
             Authentique
-          </h3>
+          </h2>
           <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
             Embarquez dans le voyage émotionnel de la maternité avec des
             photographies qui capturent la beauté et la force de cette

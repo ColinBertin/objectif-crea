@@ -13,9 +13,9 @@ export default function AboutMePage() {
       <Banner bg="/images/banner/man4.png" title="Adam Krings" />
       <div id="intro" className="text-center">
         <section className="px-10 py-8 lg:px-40 lg:py-20">
-          <h3 className="mb-6 text-white text-xl lg:text-2xl">
+          <h2 className="mb-6 text-white text-xl lg:text-2xl">
             À Propos d&apos;Adam Krings, Photographe
-          </h3>
+          </h2>
           <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
             Bienvenue sur le portfolio d&apos;Adam Krings, un photographe
             passionné qui a su évoluer avec son art, passant de la chambre noire

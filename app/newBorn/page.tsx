@@ -17,9 +17,9 @@ export default function NewBornPage() {
       <Banner bg="/images/banner/nouveauNeSmall.png" title="Nouveau né" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h3 className="mb-3 text-xl lg:text-2xl">
+          <h2 className="mb-3 text-xl lg:text-2xl">
             Les Premiers Jours : Capturer la Douceur des Nouveaux Nés
-          </h3>
+          </h2>
           <p className="text-base text-start md:text-center lg:text-lg leading-9 tracking-wide text-gray-300">
             Immortalisez la douceur, la pureté et les détails si précieux des
             premiers jours de votre nouveau-né avec des photographies qui
