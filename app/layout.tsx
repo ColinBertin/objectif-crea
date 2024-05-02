@@ -12,7 +12,7 @@ export async function generateMetadata() {
       template: `%s | Objectif Créa`,
     },
     description:
-      "Découvrez des photographies époustouflantes de portraits, de mariages, de nouveau-nés, de maternité, d'événements et de bébés par Adam Kring. Explorez notre portfolio et réservez votre séance dès aujourd'hui. Basé en Belgique et desservant Bruxelles.",
+      "écouvrez des photos époustouflantes par Adam Kring : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez dès aujourd'hui en Belgique, desservant Bruxelles.",
     icons: {
       icon: [
         {
