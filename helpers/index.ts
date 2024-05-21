@@ -32,3 +32,11 @@ export const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>)
     behavior: "smooth",
   });
 };
+
+export const handleScrollTopBtn = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  e.preventDefault();
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+};
