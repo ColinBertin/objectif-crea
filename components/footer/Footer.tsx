@@ -32,15 +32,17 @@ export default function Footer() {
 
   return (
     <footer className="flex justify-between items-center flex-wrap md:block bg-gray-800 px-6 sm:px-12 py-6">
-      <Link className="cursor-pointer" href={"/"}>
-        <Image
-          src="/images/logos/logoW.png"
-          alt="logo"
-          quality={60}
-          width={50}
-          height={50}
-        />
-      </Link>
+      <div className="flex items-center">
+        <Link className="cursor-pointer" href={"/"}>
+          <Image
+            src="/images/logos/logoW.png"
+            alt="logo"
+            quality={60}
+            width={50}
+            height={50}
+          />
+        </Link>
+      </div>
       <div className="flex justify-between items-end">
         <p className="hidden md:inline-block text-gray-300 text-sm">
           © Copyright 2012 - 2022 | All Rights Reserved
