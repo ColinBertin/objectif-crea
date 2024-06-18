@@ -18,11 +18,11 @@ export default function Footer() {
       href: "https://www.instagram.com/objectif_crea",
       icon: <AiFillInstagram size={20} />,
     },
-    {
-      name: "linkedin",
-      href: "https://www.linkedin.com/in/objectif-cr%C3%A9a-756144255/",
-      icon: <AiFillLinkedin size={20} />,
-    },
+    // {
+    //   name: "linkedin",
+    //   href: "https://www.linkedin.com/in/objectif-cr%C3%A9a-756144255/",
+    //   icon: <AiFillLinkedin size={20} />,
+    // },
     // {
     //   name: "twitter",
     //   href: "https://twitter.com/ObjectifCrea",
