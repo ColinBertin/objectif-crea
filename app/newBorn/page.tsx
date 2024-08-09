@@ -29,7 +29,7 @@ export default function NewBornPage() {
           </p>
         </div>
         <div className="px-10 pb-8 md:px-24 md:pb-20">
-          <Masonry category={3} />
+          <Masonry category="newborn" />
         </div>
         <div className="bg-gray-500">
           <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide text-xl lg:text-2xl">
