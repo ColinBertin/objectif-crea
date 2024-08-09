@@ -1,10 +1,7 @@
-import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
-import Footer from "../../components/footer/Footer";
 import Masonry from "../../components/masonry/Masonry";
 import { categories } from "../../helpers";
 import CategoryCard from "../../components/main/CategoryCard";
-import TopButton from "../../components/topButton/TopButton";
 
 export const metadata = {
   title: "Mariage",
@@ -17,17 +14,14 @@ export default function WeddingPage() {
 
   return (
     <>
-      <div>
-        <NavBar />
-        <Banner bg="/images/banner/mariageBig.png" title="Mariage" />
-      </div>
+      <Banner bg="/images/banner/mariageBig.png" title="Mariage" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h3 className="mb-3 text-xl">
+          <h2 className="mb-3 text-xl lg:text-2xl">
             Capturer l&apos;Inoubliable : Photographie de Mariage Artistique et
             Emotive
-          </h3>
-          <p className="text-base text-start md:text-center leading-7 tracking-wide text-gray-300">
+          </h2>
+          <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
             Découvrez l&apos;art de capturer les moments magiques de votre
             journée spéciale. En tant que spécialiste de la photographie de
             mariage, je crée des souvenirs intemporels qui racontent votre
@@ -40,7 +34,7 @@ export default function WeddingPage() {
           <Masonry category="wedding" />
         </div>
         <div className="bg-gray-500">
-          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide">
+          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide text-xl lg:text-2xl">
             Catégories
           </h3>
           <div
@@ -61,8 +55,6 @@ export default function WeddingPage() {
           </div>
         </div>
       </div>
-      <Footer />
-      <TopButton />
     </>
   );
 }

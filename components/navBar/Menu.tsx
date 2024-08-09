@@ -1,10 +1,8 @@
 "use client";
 import clsx from "clsx";
 import Link from "next/link";
-import { Transition } from "@headlessui/react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
-import { handleScroll } from "../../helpers";
 
 type menuProps = {
   menuState: boolean;
@@ -12,13 +10,30 @@ type menuProps = {
 };
 
 export default function Menu({ menuState, handleNavbar }: menuProps) {
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        handleNavbar?.();
+      }
+    };
+
     if (menuState) {
-      document.body.classList.add("overflow-y-hidden");
+      document.addEventListener("click", handleClickOutside);
+      document.body.classList.add("overflow-y-hidden", "md:overflow-y-auto");
     } else {
-      document.body.classList.remove("overflow-y-hidden");
+      document.removeEventListener("click", handleClickOutside);
+      document.body.classList.remove("overflow-y-hidden", "md:overflow-y-auto");
     }
-  }, [menuState]);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [menuState, handleNavbar]);
 
   const pathname = usePathname();
   const isSamePath = (p: string) => pathname?.endsWith(p);
@@ -55,58 +70,35 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
   ];
 
   return (
-    <>
-      {/* DESKTOP MENU */}
+    <div
+      ref={dropdownRef}
+      className={clsx(
+        menuState
+          ? "fixed md:top-10 md:right-5 h-screen w-screen md:w-52 md:h-auto"
+          : "hidden",
+        "flex flex-col justify-center px-20 md:px-6 md:pt-2 md:pb-6 bg-gray-800 md:mt-8 z-40 md:shadow-[0_4px_50px_5px_rgba(100,100,100,0.1)] md:rounded"
+      )}
+    >
       <ul
         className={clsx(
-          "h-screen w-1/2 md:w-auto md:h-auto md:flex hidden md:block"
+          menuState && "-mt-16 md:mt-0",
+          "text-center md:text-start"
         )}
       >
-        {pathname?.endsWith("/about-me") ? (
-          <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
-            <Link href={"#contact-form"} onClick={handleScroll}>
-              Contact
-            </Link>
-          </li>
-        ) : (
-          <li className="pb-6 md:pb-0 md:py-0 text-md text-white py-6 md:px-4 text-center border-b-2 md:border-b-0 md:hover:text-gray-300">
-            <Link href={"/about-me"}>À Propos</Link>
-          </li>
-        )}
-      </ul>
-      {/* MOBILE PHONE MENU */}
-      <Transition
-        show={menuState}
-        className="w-full flex justify-center items-center"
-        enter="transition ease-in duration-300 transform"
-        enterFrom="-translate-x-full"
-        enterTo="translate-x-0"
-        leave="transition ease-out duration-300 transform"
-        leaveFrom="translate-x-0"
-        leaveTo="-translate-x-full"
-      >
-        <ul
-          className={clsx(
-            menuState ? "flex flex-col justify-center -mt-20 mb-20" : "hidden",
-            "h-screen w-1/2 md:hidden"
-          )}
-        >
-          {sections.map((section) => (
+        {sections.map((section) => (
+          <Link key={section.title} href={section.href} onClick={handleNavbar}>
             <li
-              key={section.title}
               className={`${
                 isSamePath(section.href)
                   ? "text-gold-500 border-gold-500"
-                  : "text-white"
-              } pb-6 text-xl py-6 text-center border-b-2 hover:text-gray-300`}
+                  : "text-white border-white md:border-gray-200"
+              } text-xl md:text-base py-5 md:py-3 border-b-2 md:border-b hover:text-gold-500 hover:border-gold-500 cursor-pointer`}
             >
-              <Link href={section.href} onClick={handleNavbar}>
-                {section.title}
-              </Link>
+              {section.title}
             </li>
-          ))}
-        </ul>
-      </Transition>
-    </>
+          </Link>
+        ))}
+      </ul>
+    </div>
   );
 }

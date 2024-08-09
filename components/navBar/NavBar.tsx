@@ -3,9 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseOutline } from "react-icons/io5";
 import Menu from "./Menu";
+import { Transition } from "@headlessui/react";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -15,35 +16,42 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="w-full fixed top-0 left-0 right-0 z-30 bg-gray-800">
-      <div className="w-full justify-between md:items-center md:flex mx-auto">
-        <div className="flex justify-between px-6 py-2">
-          {/* LOGO */}
-          <Link href={"/"}>
-            <Image
-              src="/images/logos/logoW.png"
-              alt="logo"
-              quality={60}
-              width={40}
-              height={40}
-            />
-          </Link>
-          {/* HAMBURGER BUTTON FOR MOBILE */}
-          <button
-            className="md:hidden text-white rounded-md outline-none"
-            onClick={handleNavbar}
-          >
-            {navbar ? (
-              <AiOutlineClose className="h-6 w-6 md:h-8 md:w-8" />
-            ) : (
-              <GiHamburgerMenu className="h-6 w-6 md:h-8 md:w-8" />
-            )}
-          </button>
-        </div>
-        <div className="flex justify-center items-center px-6">
-          <Menu menuState={navbar} handleNavbar={handleNavbar} />
-        </div>
-      </div>
-    </nav>
+    <>
+      <nav className="w-full fixed top-0 left-0 bg-gray-800 flex justify-between px-6 py-2 z-50">
+        {/* LOGO */}
+        <Link className="inline cursor-pointer" href={"/"}>
+          <Image
+            src="/images/logos/logoW.png"
+            alt="logo"
+            quality={60}
+            width={40}
+            height={40}
+          />
+        </Link>
+        {/* HAMBURGER BUTTON */}
+        <button
+          className="text-white rounded-md outline-none hover:text-gold-500 transition ease-in duration-100 cursor-pointer"
+          onClick={handleNavbar}
+        >
+          {navbar ? (
+            <IoCloseOutline className="h-6 w-6 md:h-8 md:w-8" />
+          ) : (
+            <RxHamburgerMenu className="h-6 w-6 md:h-8 md:w-8" />
+          )}
+        </button>
+      </nav>
+      {/* MENU ITEMS */}
+      <Transition
+        show={navbar}
+        enter="transition ease-out duration-100"
+        enterFrom="transform opacity-0 scale-95"
+        enterTo="transform opacity-100 scale-100"
+        leave="transition ease-in duration-75"
+        leaveFrom="transform opacity-100 scale-100"
+        leaveTo="transform opacity-0 scale-95"
+      >
+        <Menu menuState={navbar} handleNavbar={handleNavbar} />
+      </Transition>
+    </>
   );
 }

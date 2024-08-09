@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IoIosArrowRoundUp } from "react-icons/io";
-import { handleScroll } from "../../helpers";
+import { handleScrollTopBtn } from "../../helpers";
 import { Transition } from "@headlessui/react";
 
 export default function TopButton() {
@@ -26,6 +26,7 @@ export default function TopButton() {
       }
     };
   }, []);
+
   return (
     <Transition
       show={isScrolling}
@@ -40,9 +41,9 @@ export default function TopButton() {
         id="topBtn"
         className={`${
           !isScrolling && "hidden"
-        } fixed bottom-28 right-7 z-10 bg-gray-300 text-white cursor-pointer p-2 text-md md:p-2 md:text-2xl rounded-full`}
+        } fixed bottom-28 right-7 z-10 bg-gray-300 hover:bg-gold-500 text-white cursor-pointer p-2 text-md md:p-2 md:text-2xl rounded-full transition ease-in duration-100 cursor-pointer`}
         href={"#banner"}
-        onClick={handleScroll}
+        onClick={handleScrollTopBtn}
       >
         <IoIosArrowRoundUp />
       </Link>

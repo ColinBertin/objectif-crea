@@ -15,7 +15,7 @@ export default function Banner({ bg, title }: banner) {
   return (
     <div
       id="banner"
-      className="w-screen h-screen"
+      className="h-screen"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url(${bg})`,
         backgroundRepeat: "no-repeat",
@@ -41,7 +41,7 @@ export default function Banner({ bg, title }: banner) {
         </h1>
 
         <Link href={"#intro"} onClick={handleScroll}>
-          <BsChevronCompactDown className="h-8 w-8 md:h-12 md:w-12 hover:text-gray-300" />
+          <BsChevronCompactDown className="h-8 w-8 md:h-12 md:w-12 hover:text-gold-500 transition ease-in duration-100 cursor-pointer" />
         </Link>
       </div>
     </div>

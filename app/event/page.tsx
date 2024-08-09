@@ -1,10 +1,7 @@
-import NavBar from "../../components/navBar/NavBar";
 import Banner from "../../components/banner/Banner";
-import Footer from "../../components/footer/Footer";
 import { categories } from "../../helpers";
 import CategoryCard from "../../components/main/CategoryCard";
 import Masonry from "../../components/masonry/Masonry";
-import TopButton from "../../components/topButton/TopButton";
 
 export const metadata = {
   title: "Évènement",
@@ -17,15 +14,12 @@ export default function EventPage() {
 
   return (
     <>
-      <div>
-        <NavBar />
-        <Banner bg="/images/banner/evenementSmall.png" title="Évènement" />
-      </div>
+      <Banner bg="/images/banner/evenementSmall.png" title="Évènement" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
-          <h3 className="mb-3 text-xl">
+          <h2 className="mb-3 text-xl lg:text-2xl">
             Racontant Votre Histoire : Photographie d&apos;Événement à Bruxelles
-          </h3>
+          </h2>
           <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
             Chaque événement a une histoire à raconter, des éclats de rire
             partagés aux moments de célébration authentiques. Que ce soit pour
@@ -39,7 +33,7 @@ export default function EventPage() {
           <Masonry category="event" />
         </div>
         <div className="bg-gray-500">
-          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide">
+          <h3 className="pt-8 md:pt-20 mb-3 uppercase text-white tracking-wide text-xl lg:text-2xl">
             Catégories
           </h3>
           <div
@@ -60,8 +54,6 @@ export default function EventPage() {
           </div>
         </div>
       </div>
-      <Footer />
-      <TopButton />
     </>
   );
 }
