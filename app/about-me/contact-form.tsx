@@ -52,7 +52,7 @@ export default function ContactForm() {
       } else {
         console.log("Error sending email. Status code: " + response.status);
       }
-    } catch (error: any) {
+    } catch (error) {
       setOpenDialog(true);
       setResponse({
         logged: false,

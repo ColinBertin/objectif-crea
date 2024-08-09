@@ -1,6 +1,6 @@
 "use client";
 
-import PhotoAlbum from "react-photo-album";
+import PhotoAlbum, { Photo } from "react-photo-album";
 
 import { useState } from "react";
 import NextJsImage from "./NextJsImage";
@@ -47,7 +47,7 @@ export default function Masonry({ category }: MasonryProps) {
   return (
     <>
       <PhotoAlbum
-        photos={handleCategory(category) as any}
+        photos={handleCategory(category) as Photo[]}
         layout="rows"
         renderPhoto={NextJsImage}
         defaultContainerWidth={1200}
