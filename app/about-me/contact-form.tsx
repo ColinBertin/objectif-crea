@@ -2,7 +2,6 @@
 
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useState } from "react";
-import axios from "axios";
 import Alert from "../../components/alert/Alert";
 
 interface FormInput {
@@ -37,7 +36,13 @@ export default function ContactForm() {
 
   const handleSendMail = async (data: FormInput) => {
     try {
-      const response = await axios.post("/api/sendEmail", data);
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
       if (response.status === 200) {
         setOpenDialog(true);
