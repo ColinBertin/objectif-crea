@@ -21,13 +21,13 @@ export default function MaternityPage() {
             Célébrer le Voyage de la Maternité : Photographie Émotionnelle et
             Authentique
           </h2>
-          <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
+          {/* <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
             Embarquez dans le voyage émotionnel de la maternité avec des
             photographies qui capturent la beauté et la force de cette
             expérience unique. De la grossesse à l&apos;accueil de la nouvelle
             vie, je suis là pour saisir les moments les plus tendres et
             significatifs de cette période extraordinaire de votre vie.
-          </p>
+          </p> */}
         </div>
         <div className="px-10 pb-8 md:px-24 md:pb-20">
           <Masonry category={2} />
