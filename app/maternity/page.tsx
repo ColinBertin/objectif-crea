@@ -18,8 +18,8 @@ export default function MaternityPage() {
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
           <h2 className="mb-3 text-xl lg:text-2xl">
-            Célébrer le Voyage de la Maternité : Photographie Émotionnelle et
-            Authentique
+            {/* Célébrer le Voyage de la Maternité : Photographie Émotionnelle et
+            Authentique */}
           </h2>
           <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
             Embarquez dans le voyage émotionnel de la maternité avec des
