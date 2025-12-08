@@ -10,12 +10,12 @@ export default function Footer() {
   const platforms = [
     {
       name: "facebook",
-      href: "https://www.facebook.com/profile.php?id=100077455703233",
+      href: "https://www.facebook.com",
       icon: <FaFacebookF size={20} />,
     },
     {
       name: "instagram",
-      href: "https://www.instagram.com/objectif_crea",
+      href: "https://www.instagram.com",
       icon: <AiFillInstagram size={20} />,
     },
     // {

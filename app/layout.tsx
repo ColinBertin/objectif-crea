@@ -49,7 +49,7 @@ const jsonLd: WithContext<FAQPage> = {
     "Trouvez des réponses aux questions fréquemment posées sur nos services de photographie.",
   author: {
     "@type": "Person",
-    name: "Adam Krings",
+    name: "Armand Castillo",
     url: "https://www.objectifcrea.be",
   },
   datePublished: "2023-12-10",
@@ -63,7 +63,7 @@ export async function generateMetadata() {
       template: `%s | Objectif Créa`,
     },
     description:
-      "Photos époustouflantes par Adam Kring : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez en Belgique, desservant Bruxelles.",
+      "Photos époustouflantes par Armand Castillo : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez en Belgique, desservant Bruxelles.",
     icons: {
       icon: [
         {
@@ -79,7 +79,7 @@ export async function generateMetadata() {
     openGraph: {
       title: "Objectif Créa",
       description:
-        "Photos époustouflantes par Adam Kring : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez en Belgique, desservant Bruxelles.",
+        "Photos époustouflantes par Armadn Castillo : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez en Belgique, desservant Bruxelles.",
       url: "https://www.objectifcrea.be",
       siteName: "Objectif Créa",
       images: [

@@ -8,7 +8,7 @@ const send = async (req: NextApiRequest, res: NextApiResponse) => {
   const { name, email, subject, message } = req.body;
 
   const { data, error } = await resend.emails.send({
-    from: 'ObjectifCrea.be <onboarding@resend.dev>',
+    from: '<onboarding@resend.dev>',
     to: [`${process.env.MAIL_ACCOUNT}`],
     subject: subject,
     react: EmailTemplate({name, email, subject, message}),
