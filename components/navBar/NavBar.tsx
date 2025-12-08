@@ -21,7 +21,7 @@ export default function NavBar() {
         {/* LOGO */}
         <Link className="inline cursor-pointer" href={"/"}>
           <Image
-            src="/images/logos/logoW.png"
+            src="/images/logos/logo.png"
             alt="logo"
             quality={60}
             width={40}

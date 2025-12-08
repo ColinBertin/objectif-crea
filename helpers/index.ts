@@ -2,22 +2,22 @@ export const categories = [
   {
     title: "Mariage",
     link: "/wedding",
-    bg: "/images/banner/mariageBig.png",
+    bg: "/images/banner/wedding.jpg",
   },
   {
     title: "Maternité",
     link: "/maternity",
-    bg: "/images/banner/materniteSmall.jpg",
+    bg: "/images/banner/maternity.jpg",
   },
   {
     title: "Nouveau Né",
     link: "/newBorn",
-    bg: "/images/banner/nouveauNeSmall.png",
+    bg: "/images/banner/newborn.jpg",
   },
   {
     title: "Évènement",
     link: "/event",
-    bg: "/images/banner/evenementSmall.png",
+    bg: "/images/banner/event.jpg",
   },
 ];
 

@@ -14,7 +14,7 @@ export default function MaternityPage() {
 
   return (
     <>
-      <Banner bg="/images/banner/materniteSmall.jpg" title="Maternité" />
+      <Banner bg="/images/banner/maternity.jpg" title="Maternité" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
           <h2 className="mb-3 text-xl lg:text-2xl">

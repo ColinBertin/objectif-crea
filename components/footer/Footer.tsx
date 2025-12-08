@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="flex items-center">
         <Link className="cursor-pointer" href={"/"}>
           <Image
-            src="/images/logos/logoW.png"
+            src="/images/logos/logo.png"
             alt="logo"
             quality={60}
             width={50}

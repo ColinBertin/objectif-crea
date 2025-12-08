@@ -50,7 +50,7 @@ const jsonLd: WithContext<FAQPage> = {
   author: {
     "@type": "Person",
     name: "Armand Castillo",
-    url: "https://www.objectifcrea.be",
+    // url: "https://www.objectifcrea.be",
   },
   datePublished: "2023-12-10",
   dateModified: "2023-12-28",
@@ -59,8 +59,8 @@ const jsonLd: WithContext<FAQPage> = {
 export async function generateMetadata() {
   return {
     title: {
-      default: "Objectif Créa",
-      template: `%s | Objectif Créa`,
+      default: "Mon Blog",
+      template: `%s | Mon Blog`,
     },
     description:
       "Photos époustouflantes par Armand Castillo : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez en Belgique, desservant Bruxelles.",
@@ -68,34 +68,34 @@ export async function generateMetadata() {
       icon: [
         {
           media: "(prefers-color-scheme: dark)",
-          url: "/light-favicon.ico",
+          url: "/favicon.ico",
         },
         {
           media: "(prefers-color-scheme: light)",
-          url: "/dark-favicon.ico",
+          url: "/favicon.ico",
         },
       ],
     },
     openGraph: {
-      title: "Objectif Créa",
+      title: "Mon Blog",
       description:
-        "Photos époustouflantes par Armadn Castillo : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez en Belgique, desservant Bruxelles.",
-      url: "https://www.objectifcrea.be",
-      siteName: "Objectif Créa",
-      images: [
-        {
-          url: "https://www.objectifcrea.be/images/logos/logoW.png",
-          width: 1700,
-          height: 1700,
-          alt: "Logo",
-        },
-      ],
+        "Photos époustouflantes par Armand Castillo : portraits, mariages, nouveau-nés, maternité, événements et bébés. Réservez en Belgique, desservant Bruxelles.",
+      // url: "https://www.objectifcrea.be",
+      siteName: "Mon Blog",
+      // images: [
+      //   {
+      //     url: "https://www.objectifcrea.be/images/logos/logo.png",
+      //     width: 1700,
+      //     height: 1700,
+      //     alt: "Logo",
+      //   },
+      // ],
       locale: "fr_FR",
       type: "website",
     },
-    alternates: {
-      canonical: "https://www.objectifcrea.be",
-    },
+    // alternates: {
+    //   canonical: "https://www.objectifcrea.be",
+    // },
   };
 }
 

@@ -10,7 +10,7 @@ export const metadata = {
 export default function AboutMePage() {
   return (
     <>
-      <Banner bg="/images/banner/man4.png" title="Armand Castillo" />
+      <Banner bg="/images/banner/man4.jpg" title="Armand Castillo" />
       <div id="intro" className="text-center">
         <section className="px-10 py-8 lg:px-40 lg:py-20">
           <h2 className="mb-6 text-white text-xl lg:text-2xl">
@@ -46,7 +46,7 @@ export default function AboutMePage() {
           </div>
           <div className="md:w-1/2 flex lg:justify-end">
             <Image
-              src="/images/photos/road-min.jpg"
+              src="/images/photos/road.jpg"
               alt="nouveau ne"
               quality={60}
               width={550}
@@ -68,8 +68,8 @@ export default function AboutMePage() {
           </div>
           <div className="md:w-1/2 flex lg:justify-start">
             <Image
-              src="/images/photos/deck-min.jpg"
-              alt="nouveau ne"
+              src="/images/photos/forest.jpg"
+              alt=""
               quality={60}
               width={550}
               height={550}

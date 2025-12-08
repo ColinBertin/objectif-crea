@@ -14,7 +14,7 @@ export default function NewBornPage() {
 
   return (
     <>
-      <Banner bg="/images/banner/nouveauNeSmall.png" title="Nouveau né" />
+      <Banner bg="/images/banner/newborn.jpg" title="Nouveau né" />
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
           <h2 className="mb-3 text-xl lg:text-2xl">

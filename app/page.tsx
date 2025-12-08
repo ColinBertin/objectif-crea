@@ -9,10 +9,10 @@ export default function HomePage() {
       <div id="intro" className="text-center">
         <div className="px-10 py-8 lg:px-40 lg:py-20 text-white">
           <h2 className="mb-3 text-xl lg:text-2xl">
-            Donner vie à vos visions créatives avec Objectif CréA
+            Donner vie à vos visions créatives avec Mon Blog
           </h2>
           <p className="text-base text-start md:text-center lg:text-lg leading-7 tracking-wide text-gray-300">
-            Chez Objectif CréA, transformer vos visions en chefs-d&apos;œuvre
+            Chez Mon Blog, transformer vos visions en chefs-d&apos;œuvre
             est l&apos;essence même de notre passion. Notre mission est de
             donner vie à vos projets créatifs, en alliant excellence et
             personnalisation pour créer des œuvres qui vous ressemblent.
