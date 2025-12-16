@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 import ContactButton from "../components/ContactButton/ContactButton";
 import Footer from "../components/footer/Footer";
 import NavBar from "../components/navBar/NavBar";
@@ -125,7 +125,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <TopButton />
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   );
