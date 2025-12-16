@@ -53,7 +53,7 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
     },
     {
       title: "Nouveau Né",
-      href: "/newBorn",
+      href: "/newborn",
     },
     {
       title: "Évènement",

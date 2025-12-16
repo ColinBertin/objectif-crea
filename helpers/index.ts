@@ -11,7 +11,7 @@ export const categories = [
   },
   {
     title: "Nouveau Né",
-    link: "/newBorn",
+    link: "/newborn",
     bg: "/images/banner/newborn.jpg",
   },
   {

@@ -7,7 +7,7 @@ export const metadata = {
   title: "Nouveau né",
 };
 
-export default function NewBornPage() {
+export default function NewbornPage() {
   const filteredCategories = () => {
     return categories.filter((cat) => cat.title !== "Nouveau Né");
   };
