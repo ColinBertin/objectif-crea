@@ -4,7 +4,7 @@ import PhotoAlbum, { Photo } from "react-photo-album";
 
 import { useState } from "react";
 import NextJsImage from "./NextJsImage";
-import photos, { photos2, photos3, photos4 } from "./photos";
+import { wedding, newborn, maternity, event } from "./photos";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -32,13 +32,13 @@ export default function Masonry({ category }: MasonryProps) {
   const handleCategory = (cat: number) => {
     switch (cat) {
       case 1:
-        return photos;
+        return event;
       case 2:
-        return photos2;
+        return maternity;
       case 3:
-        return photos3;
+        return newborn;
       case 4:
-        return photos4;
+        return wedding;
       default:
         break;
     }
