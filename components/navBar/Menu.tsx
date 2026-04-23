@@ -24,14 +24,17 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
 
     if (menuState) {
       document.addEventListener("click", handleClickOutside);
-      document.body.classList.add("overflow-y-hidden", "md:overflow-y-auto");
+      if (!window.matchMedia("(min-width: 768px)").matches) {
+        document.body.style.overflow = "hidden";
+      }
     } else {
       document.removeEventListener("click", handleClickOutside);
-      document.body.classList.remove("overflow-y-hidden", "md:overflow-y-auto");
+      document.body.style.overflow = "";
     }
 
     return () => {
       document.removeEventListener("click", handleClickOutside);
+      document.body.style.overflow = "";
     };
   }, [menuState, handleNavbar]);
 
@@ -73,18 +76,11 @@ export default function Menu({ menuState, handleNavbar }: menuProps) {
     <div
       ref={dropdownRef}
       className={clsx(
-        menuState
-          ? "fixed md:top-10 md:right-5 h-screen w-screen md:w-52 md:h-auto"
-          : "hidden",
-        "flex flex-col justify-center px-20 md:px-6 md:pt-2 md:pb-6 bg-gray-800 md:mt-8 z-40 md:shadow-[0_4px_50px_5px_rgba(100,100,100,0.1)] md:rounded"
+        "fixed top-14 left-0 md:left-auto md:top-14 md:right-5 h-[calc(100vh-3.5rem)] w-screen md:w-52 md:h-auto",
+        "flex flex-col justify-center px-20 md:px-6 md:pt-2 md:pb-6 bg-gray-800 z-40 md:shadow-[0_4px_50px_5px_rgba(100,100,100,0.1)] md:rounded"
       )}
     >
-      <ul
-        className={clsx(
-          menuState && "-mt-16 md:mt-0",
-          "text-center md:text-start"
-        )}
-      >
+      <ul className="text-center md:text-start">
         {sections.map((section) => (
           <Link key={section.title} href={section.href} onClick={handleNavbar}>
             <li
