@@ -43,6 +43,7 @@
   },
   "overrides": {
     "glob": "11.1.0",
-    "js-cookie": "3.0.7"
+    "js-cookie": "3.0.7",
+    "browserslist": "4.28.9"
   }
 }
